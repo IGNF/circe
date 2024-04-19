@@ -1,0 +1,90 @@
+﻿CIRCE V5
+*--------------------------------------------------------------------------------------------------------
+*---------definition des ellipsoides utilises------------------------------------------------------------
+*---------ELG num a b 1/f e² nom-------------------------------------------------------------------------
+
+ELG 001 6378388.0000 6356911.9461 297.000000 .006722670022 International (Hayford 1909)
+* mise à jour de la valeur e2 du GRS 1980 en fonction des paramètres de définition
+ELG 037 6378137.0000 6356752.3141 298.257222101 .006694380023 GRS 1980
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des meridiens utilises--------------------------------------------------------------
+*---------LGO num unite valeur nom-----------------------------------------------------------------------
+
+LGO 01 01   0.          Greenwich
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des referentiels geodesiques utilises-----------------------------------------------
+*---------REG num elg lgo dimension short nom------------------------------------------------------------------
+
+REG 006 001 01	2D	KERGK0 KERGUELEN - K0 (IGN 1962)
+REG 036 037 01	3D	RGTAAF07 RGTAAF07 (RESEAU GEODESIQUE DES TAAF 2007)
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des referentiels altimetriques utilises---------------------------------------------
+*---------REA num Nom------------------------------------------------------------------------------------
+
+REA 026 KERG62 IGN 1962 (KERGUELEN)
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des parametres de transformation standard utilises----------------------------------
+*---------TSG num reg1 reg2 prec Tx  Ty  Tz  Ech  Rx  Ry  Rz dTx  dTy  dTz  dEch  dRx  dRy  dRz Epoque cumul---------------------------------------------
+
+* Paramètres calculés à partir de 3 points (résidus sur les points inférieurs à 10 cm)
+TSG 10992 006 036 2  144.899    -186.770   100.923  0.       0.       0.       0. 0 0 0 0 0 0 0 0 0
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des projections cartographiques utilisees-------------------------------------------
+*---------PRC num mode X0  Y0   Lgo   unité_ang  l0  j0  delta  j1  j2  c  type nom-----------------
+
+PRC 0342 0 500000.  10000000.  01 10  69.     0.   0.9996 0 0 0 3 UTM Sud fuseau 42
+
+*--------------------------------------------------------------------------------------------------------
+*---------associations referentiels geodesiques/projections cartographiques et zones d'application-------
+*---------PROJ reg prc unite lonMin latMin lonMax latMax-------------------------------------------------
+
+PROJ 006 0342 02 68.0  -50.5 71.0 -48.0 KERGK0UTM42S KERGK0 - UTM Sud 42
+PROJ 036 0342 02 68.0  -50.5 71.0 -48.0 RGTAAFUTM42S RGTAAF07 - UTM Sud 42
+
+*--------------------------------------------------------------------------------------------------------
+*---------associations grille geoide/referentiel geodesique/referentiel altimetrique---------------------
+*---------GR1D "nomfichier" reg [rea]...[rea]------------------------------------------------------------
+
+GR1D ggker08v2.tac 036 026
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des zones d'application des referentiels geodesiques--------------------------------
+*---------ZNE reg unite lonMin latMin lonMax latMax------------------------------------------------------
+*---------Toutes les longitudes sont rapportées au Méridien de Greenwich---------------------------------
+
+ZNE 006 02 68.0  -50.5 71.0 -48.0
+ZNE 036 02 68.0  -50.5 71.0 -48.0
+
+*--------------------------------------------------------------------------------------------------------
+*---------associations referentiels geodesiques/type de coordonnées possibles----------------------------
+*---------TYPCOOR reg [01:Cartesiennes] [02:Geographiques] [03:PLanes] ------------------------------
+
+TYPCOOR 006 02 03
+TYPCOOR 036 01 02 03
+
+
+*--------------------------------------------------------------------------------------------------------
+*---------associations referentiels geodesiques/unites utilisables---------------------------------------
+*-----------------------------------remarque : si aucune info prend toutes les unités possibles----------
+*---------UNIT reg [unite]...[unite]---------------------------------------------------------------------
+
+UNIT 006
+UNIT 036
+
+*---------01 : radians
+*---------02 : degrés décimaux
+*---------03 : grades
+*---------04 : heures décimales
+*---------05 : secondes de degré
+*---------06 : secondes d'heure
+
+*---------10 : degrés, minutes, secondes
+*---------11 : heures, minutes, secondes
+*---------12 : degrés, minutes, décimales
+*--------------------------------------------------------------------------------------------------------
+

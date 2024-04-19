@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CIRCE_OPTIONS>
+	<appTitle>Circé Antilles</appTitle>
+	<appCopyright>Copyright @ IGN 2023</appCopyright>
+	<appVersion>Version 5.4.3 - Décembre 2023</appVersion>
+	<appDescription>La transformation entre le repère de référence géodésique ITRF2014 et les divers repères de référence locaux est effectuée par des transformations à 14 paramètres (translations, rotations et facteur d'échelle, avec leurs variations annuelles). Les changements d'époque dans ITRF2014 utilisent un modèle de vitesse IGN, le modèle de plaques ITRF2014 ne couvrant pas la plaque "Caraïbes". la limite, donc pas de rigidité globale donnée par les stations sur les îles.Les autres transformations géodésiques sont effectuées entre le repère RGAF09 et les repères locaux avec des jeux de 7 paramètres. Des grilles modélisant la surface de conversion altimétrique entre les repères WGS84-RRAF ou RGAF09 et les systèmes altimétriques locaux permettent le passage entre hauteur ellipsoïdale et altitude.</appDescription>
+	<appHelp>CirceANT542.chm</appHelp>
+	<appStyle>Horizontal</appStyle>
+	<appUserManual>CirceV5ManuelUtilisateur.pdf</appUserManual>
+	<dataMode>2</dataMode>
+	<logoFilename>logocouleur_petit.png</logoFilename>
+	<imageFilename>circe12cinq.png</imageFilename>
+	<iconFilename>circeV5.png</iconFilename>
+	<sourceDataPathname>D:/Circev5/4.dev/circe_coord_tests/GUAD_WGS84_xyz.txt</sourceDataPathname>
+	<targetDataPathname>D:/Circev5/projets/workspace/test/plop</targetDataPathname>
+	<metadataFile>DataANTnew.txt</metadataFile>
+	<boundaryFile>PB2002_plates.txt</boundaryFile>
+	<sourceGeodeticFrameId>REGI140001</sourceGeodeticFrameId>
+	<sourceVerticalFrameId>REA006</sourceVerticalFrameId>
+	<targetGeodeticFrameId>REGI140001</targetGeodeticFrameId>
+	<targetVerticalFrameId>REA006</targetVerticalFrameId>
+	<sourceGeodeticCRSid>ITRF2014G</sourceGeodeticCRSid>
+	<sourceVerticalCRSid>GUAD88</sourceVerticalCRSid>
+	<targetGeodeticCRSid>ITRF2014</targetGeodeticCRSid>
+	<targetVerticalCRSid>GUAD88</targetVerticalCRSid>
+	<geodeticTransfoId></geodeticTransfoId>
+	<verticalTransfoId></verticalTransfoId>
+	<sourceGeodeticCRStype>2</sourceGeodeticCRStype>
+	<targetGeodeticCRStype>1</targetGeodeticCRStype>
+	<sourceDataFormat>LP</sourceDataFormat>
+	<sourceEpoch>2011.2</sourceEpoch>
+	<targetDataFormat>XYZ</targetDataFormat>
+	<targetEpoch>2011.2</targetEpoch>
+	<sourceDataUnit>DMS</sourceDataUnit>
+	<targetDataUnit>DEGREES</targetDataUnit>
+	<sourceVerticalFrameAuthoritative>0</sourceVerticalFrameAuthoritative>
+	<targetVerticalFrameAuthoritative>0</targetVerticalFrameAuthoritative>
+	<useSourceGeodeticCRS>1</useSourceGeodeticCRS>
+	<useTargetGeodeticCRS>1</useTargetGeodeticCRS>
+	<useSourceVerticalCRS>0</useSourceVerticalCRS>
+	<useTargetVerticalCRS>0</useTargetVerticalCRS>
+	<printCS>0</printCS>
+	<displayBoundingBox>0</displayBoundingBox>
+	<noPrintSppm>0</noPrintSppm>
+	<noUseVerticalFrameAuthoritative>0</noUseVerticalFrameAuthoritative>
+	<scrollArea>0</scrollArea>
+	<plainDMS>0</plainDMS>
+	<displayPrecision>0.001</displayPrecision>
+	<separator>Espace</separator>	
+	<id></id>
+	<X>2901618.691</X>
+	<Y>-5401060.446</Y>
+	<Z>1751767.985</Z>
+	<L>-61.1</L>
+	<P>15.</P>
+	<H>0.</H>
+	<E>0.</E>
+	<N>0.</N>
+	<V>0.</V>
+</CIRCE_OPTIONS>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CIRCE_OPTIONS>
+	<appTitle>Circé Mayotte</appTitle>
+	<appCopyright>Copyright @ IGN 2022</appCopyright>
+	<appVersion>Version 5.4.3 - Décembre 2023</appVersion>
+	<appDescription>La transformation standard est effectuée entre les systèmes RGM04, Cadastre1997, et Combani 1950 avec des paramètres de similitude (translation, rotation et facteur d'échelle) calculés en 2004 . Pour la composante verticale, est utilisée une grille de conversion géométrique calculée en 2004 et intégrant le géoïde mondial EGM96 (recalé localement pour s'adapter à l'altimétrie). NB : les systèmes de référence altimétrique SHOM 1953 et IGN 1950 sont strictement équivalents.</appDescription>
+	<appHelp>CirceMAY542.chm</appHelp>
+	<appUserManual>CirceV5ManuelUtilisateur.pdf</appUserManual>
+	<dataMode>2</dataMode>
+	<logoFilename>logocouleur_petit.png</logoFilename>
+	<imageFilename>circe12cinq.png</imageFilename>
+	<iconFilename>circeV5.png</iconFilename>
+	<sourceDataPathname></sourceDataPathname>
+	<targetDataPathname></targetDataPathname>
+	<metadataFile>DataMAYnew.txt</metadataFile>
+	<boundaryFile></boundaryFile>
+	<sourceGeodeticFrameId>REG7020001</sourceGeodeticFrameId>
+	<sourceVerticalFrameId>REA038</sourceVerticalFrameId>
+	<targetGeodeticFrameId>REG7020001</targetGeodeticFrameId>
+	<targetVerticalFrameId>REA038</targetVerticalFrameId>
+	<sourceGeodeticCRSid>RGM04G</sourceGeodeticCRSid>
+	<sourceVerticalCRSid>MAYO53</sourceVerticalCRSid>
+	<targetGeodeticCRSid>RGM04UTM38S</targetGeodeticCRSid>
+	<targetVerticalCRSid>MAYO53</targetVerticalCRSid>
+	<geodeticTransfoId></geodeticTransfoId>
+	<verticalTransfoId></verticalTransfoId>
+	<sourceGeodeticCRStype>2</sourceGeodeticCRStype>
+	<targetGeodeticCRStype>3</targetGeodeticCRStype>
+	<sourceDataFormat>LPH</sourceDataFormat>
+	<sourceEpoch>0.0000</sourceEpoch>
+	<targetDataFormat>ENH</targetDataFormat>
+	<targetEpoch>0.0000</targetEpoch>
+	<sourceDataUnit>DEGREES</sourceDataUnit>
+	<targetDataUnit>DMS</targetDataUnit>
+	<sourceVerticalFrameAuthoritative>0</sourceVerticalFrameAuthoritative>
+	<targetVerticalFrameAuthoritative>0</targetVerticalFrameAuthoritative>
+	<useSourceGeodeticCRS>1</useSourceGeodeticCRS>
+	<useTargetGeodeticCRS>1</useTargetGeodeticCRS>
+	<useSourceVerticalCRS>1</useSourceVerticalCRS>
+	<useTargetVerticalCRS>1</useTargetVerticalCRS>
+	<printCS>0</printCS>
+	<displayPrecision>0.001</displayPrecision>
+	<separator>Espace</separator>
+	<id></id>
+	<X>0.0000</X>
+	<Y>0.0000</Y>
+	<Z>0.0000</Z>
+	<L>45.0000000000</L>
+	<P>-13.0000000000</P>
+	<H>0.0000</H>
+	<E>543462.0580</E>
+	<N>8618123.5080</N>
+	<V>21.7270</V>
+</CIRCE_OPTIONS>

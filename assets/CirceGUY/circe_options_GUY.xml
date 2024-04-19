@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CIRCE_OPTIONS>
+	<appTitle>Circé Guyane</appTitle>
+	<appCopyright>Copyright @ IGN 2023</appCopyright>
+	<appVersion>Version 5.4.3 - Décembre 2023</appVersion>
+	<appDescription>La transformation entre le repère de référence géodésique ITRF2014 et le repère RGFG95 est effectuée par une transformation à 14 paramètres (translations, rotations et facteur d'échelle, avec leurs variations annuelles). Les changements d'époque dans ITRF2014 utilisent le modèle de plaques ITRF2014. Les autres transformations géodésiques sont effectuées entre le repère RGFG95 et le repère local CSG67 avec un jeu de 7 paramètres. Une grille modélisant la surface de conversion altimétrique entre le repère RGFG95 (pour la Guyane) et le système altimétrique local permet le passage entre hauteur ellipsoïdale et altitude.</appDescription>
+	<appHelp>CirceGUY542.chm</appHelp>
+	<appStyle>Horizontal</appStyle>
+	<appUserManual>CirceV5ManuelUtilisateur.pdf</appUserManual>
+	<dataMode>2</dataMode>
+	<logoFilename>logocouleur_petit.png</logoFilename>
+	<imageFilename>circe12cinq.png</imageFilename>
+	<iconFilename>circeV5.png</iconFilename>
+	<sourceDataPathname></sourceDataPathname>
+	<targetDataPathname>D:/Circev5/projets/workspace/test/plop</targetDataPathname>
+	<metadataFile>DataGUYnew.txt</metadataFile>
+	<boundaryFile>PB2002_plates.txt</boundaryFile>
+	<menuTitle_help></menuTitle_help>
+	<menuTitle_tool></menuTitle_tool>
+	<menuTitle_zone></menuTitle_zone>
+	<menuTitle_display></menuTitle_display>
+	<sourceGeodeticFrameId>REG4070001</sourceGeodeticFrameId>
+	<sourceVerticalFrameId>REA016</sourceVerticalFrameId>
+	<targetGeodeticFrameId>REG4860001</targetGeodeticFrameId>
+	<targetVerticalFrameId></targetVerticalFrameId>
+	<sourceGeodeticCRSid>CSG67G</sourceGeodeticCRSid>
+	<sourceVerticalCRSid>GUYA77</sourceVerticalCRSid>
+	<targetGeodeticCRSid>RGFG95G</targetGeodeticCRSid>
+	<targetVerticalCRSid></targetVerticalCRSid>
+	<geodeticTransfoId></geodeticTransfoId>
+	<verticalTransfoId></verticalTransfoId>
+	<sourceGeodeticCRStype>2</sourceGeodeticCRStype>
+	<targetGeodeticCRStype>2</targetGeodeticCRStype>
+	<sourceDataFormat>LPV</sourceDataFormat>
+	<sourceEpoch>0.</sourceEpoch>
+	<targetDataFormat>LPH</targetDataFormat>
+	<targetEpoch>0.</targetEpoch>
+	<sourceDataUnit>DEGREES</sourceDataUnit>
+	<targetDataUnit>DMS</targetDataUnit>
+	<sourceVerticalFrameAuthoritative>0</sourceVerticalFrameAuthoritative>
+	<targetVerticalFrameAuthoritative>0</targetVerticalFrameAuthoritative>
+	<useSourceGeodeticCRS>1</useSourceGeodeticCRS>
+	<useTargetGeodeticCRS>1</useTargetGeodeticCRS>
+	<useSourceVerticalCRS>1</useSourceVerticalCRS>
+	<useTargetVerticalCRS>0</useTargetVerticalCRS>
+	<printCS>0</printCS>
+	<displayBoundingBox>1</displayBoundingBox>
+	<noPrintSppm>0</noPrintSppm>
+	<noUseVerticalFrameAuthoritative>1</noUseVerticalFrameAuthoritative>
+	<scrollArea>0</scrollArea>
+	<plainDMS>0</plainDMS>
+	<displayPrecision>0.001</displayPrecision>
+	<separator>Espace</separator>
+	<id></id>
+	<X>0.</X>
+	<Y>0.</Y>
+	<Z>0.</Z>
+	<L>-53.</L>
+	<P>4.</P>
+	<H>0.</H>
+	<E>0.</E>
+	<N>0.</N>
+	<V>10.</V>
+</CIRCE_OPTIONS>

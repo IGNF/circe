@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CIRCE_OPTIONS>
+	<appTitle>Circé Terre Adélie</appTitle>
+	<appCopyright>Copyright @ IGN 2022</appCopyright>
+	<appVersion>Version 5.4.3 - Décembre 2023</appVersion>
+	<appDescription>Les transformations sont effectuées entre les systèmes "Pointe Géologie Perroud 1950" et RGTAAF07 d'une part, et "Pétrels - IGN1972" et WGS84 d'autre part, avec des paramètres standard (3 translations) uniques pour l'île des Pétrels. Pour la composante verticale est utilisée une grille de conversion altimétrique géométrique réalisée à partir du géoïde mondial EGM2008 et de points GPS nivelés sur l'île des Pétrels. Ailleurs en Terre Adélie, la grille de conversion altimétrique est un simple extrait du modèle EGM2008.</appDescription>
+	<appHelp>CirceTA542.chm</appHelp>
+	<appUserManual>CirceV5ManuelUtilisateur.pdf</appUserManual>
+	<dataMode>2</dataMode>
+	<logoFilename>logocouleur_petit.png</logoFilename>
+	<imageFilename>circe12cinq.png</imageFilename>
+	<iconFilename>circeV5.png</iconFilename>
+	<sourceDataPathname></sourceDataPathname>
+	<targetDataPathname></targetDataPathname>
+	<metadataFile>DataTAnew.txt</metadataFile>
+	<boundaryFile></boundaryFile>
+	<sourceGeodeticFrameId>REG5490001</sourceGeodeticFrameId>
+	<sourceVerticalFrameId>REA034</sourceVerticalFrameId>
+	<targetGeodeticFrameId>REG5490001</targetGeodeticFrameId>
+	<targetVerticalFrameId>REA034</targetVerticalFrameId>
+	<sourceGeodeticCRSid>RGTAAF07G</sourceGeodeticCRSid>
+	<sourceVerticalCRSid>PETRELS52</sourceVerticalCRSid>
+	<targetGeodeticCRSid>RGTAAFUTM53S</targetGeodeticCRSid>
+	<targetVerticalCRSid>PETRELS52</targetVerticalCRSid>
+	<geodeticTransfoId></geodeticTransfoId>
+	<verticalTransfoId></verticalTransfoId>
+	<sourceGeodeticCRStype>2</sourceGeodeticCRStype>
+	<targetGeodeticCRStype>3</targetGeodeticCRStype>
+	<sourceDataFormat>LPH</sourceDataFormat>
+	<sourceEpoch>0.0000</sourceEpoch>
+	<targetDataFormat>ENV</targetDataFormat>
+	<targetEpoch>0.0000</targetEpoch>
+	<sourceDataUnit>DEGREES</sourceDataUnit>
+	<targetDataUnit>RADIANS</targetDataUnit>
+	<sourceVerticalFrameAuthoritative>0</sourceVerticalFrameAuthoritative>
+	<targetVerticalFrameAuthoritative>1</targetVerticalFrameAuthoritative>
+	<useSourceGeodeticCRS>1</useSourceGeodeticCRS>
+	<useTargetGeodeticCRS>1</useTargetGeodeticCRS>
+	<useSourceVerticalCRS>0</useSourceVerticalCRS>
+	<useTargetVerticalCRS>1</useTargetVerticalCRS>
+	<printCS>0</printCS>
+	<displayPrecision>0.001</displayPrecision>
+	<separator>Espace</separator>	
+	<id></id>
+	<X>0.0000</X>
+	<Y>0.0000</Y>
+	<Z>0.0000</Z>
+	<L>140.0000000000</L>
+	<P>-66.7500000000</P>
+	<H>0.0000</H>
+	<E>0.0000</E>
+	<N>0.0000</N>
+	<V>31.5300</V>
+</CIRCE_OPTIONS>

@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CIRCE>
+<CT_CrsCatalogue xmlns:gml="http://www.opengis.net/gml" xmlns:gmd="http://www.isotc211.org/2005/gmd">
+<gml:Ellipsoid gml:id="ELG001">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/ellipsoid/IGNF/ELG001</gml:identifier>
+    <gml:name>INTERNATIONAL-HAYFORD 1909 (INTERNATIONAL 1924)</gml:name>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:semiMajorAxis uom="METERS">6378388.000000000000000</gml:semiMajorAxis>
+    <gml:semiMinorAxis uom="METERS">6356911.946100000292063</gml:semiMinorAxis>
+    <circe:squareEccentricity>0.006722670022000</circe:squareEccentricity>
+    <gml:inverseFlattening>297.000000000000000</gml:inverseFlattening>
+</gml:Ellipsoid>
+<gml:Ellipsoid gml:id="ELG037">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/ellipsoid/IGNF/ELG037</gml:identifier>
+    <gml:name>IAG GRS 1980</gml:name>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:semiMajorAxis uom="METERS">6378137.000000000000000</gml:semiMajorAxis>
+    <gml:semiMinorAxis uom="METERS">6356752.314100000075996</gml:semiMinorAxis>
+    <circe:squareEccentricity>0.006694380023000</circe:squareEccentricity>
+    <gml:inverseFlattening>298.257222000000013</gml:inverseFlattening>
+</gml:Ellipsoid>
+<gml:PrimeMeridian gml:id="LGO01">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/meridian/IGNF/LGO01</gml:identifier>
+    <gml:name>GREENWICH (OBSERVATOIRE)</gml:name>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:greenwichLongitude uom="RADIANS">0.000000000000000</gml:greenwichLongitude>
+</gml:PrimeMeridian>
+<circe:geodeticReferenceSystem gml:id="REG1170001">
+    <gml:name>CAP BIENVENUE - PERROUD 1955</gml:name>
+    <circe:dimension>3D</circe:dimension>
+    <gmd:westBoundLongitude uom="DEGREES">139.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">142.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:usesEllipsoid xlink:href="ELG001"/>
+    <circe:usesForTransformation xlink:href="REG1170001"/>
+</circe:geodeticReferenceSystem>
+<circe:geodeticReferenceFrame gml:id="REG1170001">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/datum/IGNF/REG1170001</gml:identifier>
+    <gml:name>CAP BIENVENUE - PERROUD 1955</gml:name>
+	<circe:isKeyGeodeticFrame>0</circe:isKeyGeodeticFrame>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesReferenceSystem xlink:href="REG1170001"/>
+</circe:geodeticReferenceFrame>
+<gml:GeocentricCRS gml:id="CAPBP55">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geocentric</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG1170001"/>
+</gml:GeocentricCRS>
+<gml:GeographicCRS gml:id="CAPBP55G">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geographic</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOGRAPHIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG1170001"/>
+</gml:GeographicCRS>
+<circe:geodeticReferenceSystem gml:id="REG1230001">
+    <gml:name>CAP JULES - PERROUD 1955</gml:name>
+    <circe:dimension>3D</circe:dimension>
+    <gmd:westBoundLongitude uom="DEGREES">139.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">142.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:usesEllipsoid xlink:href="ELG001"/>
+    <circe:usesForTransformation xlink:href="REG1230001"/>
+</circe:geodeticReferenceSystem>
+<circe:geodeticReferenceFrame gml:id="REG1230001">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/datum/IGNF/REG1230001</gml:identifier>
+    <gml:name>CAP JULES - PERROUD 1955</gml:name>
+	<circe:isKeyGeodeticFrame>0</circe:isKeyGeodeticFrame>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesReferenceSystem xlink:href="REG1230001"/>
+</circe:geodeticReferenceFrame>
+<gml:GeocentricCRS gml:id="CAPJP55">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geocentric</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG1230001"/>
+</gml:GeocentricCRS>
+<gml:GeographicCRS gml:id="CAPJP55G">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geographic</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOGRAPHIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG1230001"/>
+</gml:GeographicCRS>
+<circe:geodeticReferenceSystem gml:id="REG4860001">
+    <gml:name>PETRELS-IGN 1972</gml:name>
+    <circe:dimension>3D</circe:dimension>
+    <gmd:westBoundLongitude uom="DEGREES">139.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">142.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:usesEllipsoid xlink:href="ELG001"/>
+    <circe:usesForTransformation xlink:href="REG4860001"/>
+</circe:geodeticReferenceSystem>
+<circe:geodeticReferenceFrame gml:id="REG4860001">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/datum/IGNF/REG4860001</gml:identifier>
+    <gml:name>PETRELS-IGN 1972</gml:name>
+	<circe:isKeyGeodeticFrame>0</circe:isKeyGeodeticFrame>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesReferenceSystem xlink:href="REG4860001"/>
+</circe:geodeticReferenceFrame>
+<gml:GeocentricCRS gml:id="PETRELS72">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geocentric</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG4860001"/>
+</gml:GeocentricCRS>
+<gml:GeographicCRS gml:id="PETRELS72G">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geographic</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOGRAPHIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG4860001"/>
+</gml:GeographicCRS>
+<circe:geodeticReferenceSystem gml:id="REG4920001">
+    <gml:name>POINTE GEOLOGIE-PERROUD 1950</gml:name>
+    <circe:dimension>3D</circe:dimension>
+    <gmd:westBoundLongitude uom="DEGREES">139.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">142.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:usesEllipsoid xlink:href="ELG001"/>
+    <circe:usesForTransformation xlink:href="REG4920001"/>
+</circe:geodeticReferenceSystem>
+<circe:geodeticReferenceFrame gml:id="REG4920001">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/datum/IGNF/REG4920001</gml:identifier>
+    <gml:name>POINTE GEOLOGIE-PERROUD 1950</gml:name>
+	<circe:isKeyGeodeticFrame>0</circe:isKeyGeodeticFrame>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesReferenceSystem xlink:href="REG4920001"/>
+</circe:geodeticReferenceFrame>
+<gml:GeocentricCRS gml:id="PGP50">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geocentric</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG4920001"/>
+</gml:GeocentricCRS>
+<gml:GeographicCRS gml:id="PGP50G">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geographic</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOGRAPHIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG4920001"/>
+</gml:GeographicCRS>
+<circe:geodeticReferenceSystem gml:id="REG4980001">
+    <gml:name>PORT-MARTIN - PERROUD 1955</gml:name>
+    <circe:dimension>3D</circe:dimension>
+    <gmd:westBoundLongitude uom="DEGREES">139.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">142.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:usesEllipsoid xlink:href="ELG001"/>
+    <circe:usesForTransformation xlink:href="REG4980001"/>
+</circe:geodeticReferenceSystem>
+<circe:geodeticReferenceFrame gml:id="REG4980001">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/datum/IGNF/REG4980001</gml:identifier>
+    <gml:name>PORT-MARTIN - PERROUD 1955</gml:name>
+	<circe:isKeyGeodeticFrame>0</circe:isKeyGeodeticFrame>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesReferenceSystem xlink:href="REG4980001"/>
+</circe:geodeticReferenceFrame>
+<gml:GeocentricCRS gml:id="PMARP55">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geocentric</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG4980001"/>
+</gml:GeocentricCRS>
+<gml:GeographicCRS gml:id="PMARP55G">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geographic</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOGRAPHIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG4980001"/>
+</gml:GeographicCRS>
+<circe:geodeticReferenceSystem gml:id="REG5490001">
+    <gml:name>RGTAAF07 (RESEAU GEODESIQUE DES TAAF 2007)</gml:name>
+    <circe:dimension>3D</circe:dimension>
+    <gmd:westBoundLongitude uom="DEGREES">139.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">142.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:usesEllipsoid xlink:href="ELG037"/>
+    <circe:usesForTransformation xlink:href="REG5490001"/>
+</circe:geodeticReferenceSystem>
+<circe:geodeticReferenceFrame gml:id="REG5490001">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/datum/IGNF/REG5490001</gml:identifier>
+    <gml:name>RGTAAF07 (RESEAU GEODESIQUE DES TAAF 2007)</gml:name>
+	<circe:isKeyGeodeticFrame>0</circe:isKeyGeodeticFrame>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesReferenceSystem xlink:href="REG5490001"/>
+</circe:geodeticReferenceFrame>
+<gml:GeocentricCRS gml:id="RGTAAF07">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geocentric</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG5490001"/>
+</gml:GeocentricCRS>
+<gml:GeographicCRS gml:id="RGTAAF07G">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geographic</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOGRAPHIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG5490001"/>
+</gml:GeographicCRS>
+<circe:geodeticReferenceSystem gml:id="REG6790001">
+    <gml:name>WGS 84</gml:name>
+    <circe:dimension>3D</circe:dimension>
+    <gmd:westBoundLongitude uom="DEGREES">139.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">142.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:usesEllipsoid xlink:href="ELG037"/>
+    <circe:usesForTransformation xlink:href="REG6790001"/>
+</circe:geodeticReferenceSystem>
+<circe:geodeticReferenceFrame gml:id="REG6790001">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/datum/IGNF/REG6790001</gml:identifier>
+    <gml:name>WGS 84</gml:name>
+	<circe:isKeyGeodeticFrame>0</circe:isKeyGeodeticFrame>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesReferenceSystem xlink:href="REG6790001"/>
+</circe:geodeticReferenceFrame>
+<gml:GeocentricCRS gml:id="WGS84">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geocentric</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG6790001"/>
+</gml:GeocentricCRS>
+<gml:GeographicCRS gml:id="WGS84G">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geographic</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOGRAPHIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG6790001"/>
+</gml:GeographicCRS>
+<circe:verticalReferenceSystem gml:id="REA004">
+    <gml:name>PORT-MARTIN</gml:name>
+    <gmd:westBoundLongitude uom="DEGREES">139.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">142.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+</circe:verticalReferenceSystem>
+<circe:verticalReferenceFrame gml:id="REA004">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">REA004</gml:identifier>
+    <gml:name>PORT-MARTIN</gml:name>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesVerticalSystem xlink:href="REA004"/>
+</circe:verticalReferenceFrame>
+<gml:VerticalCRS gml:id="TERAD51">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>vertical</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>VERTICAL</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REA004"/>
+</gml:VerticalCRS>
+<circe:verticalReferenceSystem gml:id="REA034">
+    <gml:name>EPF 1952 (ILE DES PETRELS)</gml:name>
+    <gmd:westBoundLongitude uom="DEGREES">139.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">142.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+</circe:verticalReferenceSystem>
+<circe:verticalReferenceFrame gml:id="REA034">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">REA034</gml:identifier>
+    <gml:name>EPF 1952 (ILE DES PETRELS)</gml:name>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesVerticalSystem xlink:href="REA034"/>
+</circe:verticalReferenceFrame>
+<gml:VerticalCRS gml:id="PETRELS52">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>vertical</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>VERTICAL</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REA034"/>
+</gml:VerticalCRS>
+<circe:verticalReferenceSystem gml:id="REA999">
+    <gml:name>EGM2008</gml:name>
+    <gmd:westBoundLongitude uom="DEGREES">139.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">142.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+</circe:verticalReferenceSystem>
+<circe:verticalReferenceFrame gml:id="REA999">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">REA999</gml:identifier>
+    <gml:name>EGM2008</gml:name>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesVerticalSystem xlink:href="REA999"/>
+</circe:verticalReferenceFrame>
+<gml:VerticalCRS gml:id="EGM2008">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>vertical</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>VERTICAL</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REA999"/>
+</gml:VerticalCRS>
+<circe:frameTransformation gml:id="608">
+    <circe:description>frame transformation</circe:description>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:source_frame>REG4860001</circe:source_frame>
+    <circe:target_frame>REG6790001</circe:target_frame>
+    <circe:values_number>3</circe:values_number>
+    <circe:precision_code>YES</circe:precision_code>
+	<circe:init_values>365,194,166,0,0,0,0,0,0,0,0,0,0,0</circe:init_values>
+	<circe:values_unit>SECONDS</circe:values_unit>
+    <circe:epoch>0.000000</circe:epoch>
+    <circe:precision_code_init>6</circe:precision_code_init>
+    <circe:layout>CONSTANT</circe:layout>
+</circe:frameTransformation>
+<circe:frameTransformation gml:id="815">
+    <circe:description>frame transformation</circe:description>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:source_frame>REG4920001</circe:source_frame>
+    <circe:target_frame>REG5490001</circe:target_frame>
+    <circe:values_number>3</circe:values_number>
+    <circe:precision_code>YES</circe:precision_code>
+	<circe:init_values>324.912,153.282,172.026,0,0,0,0,0,0,0,0,0,0,0</circe:init_values>
+	<circe:values_unit>SECONDS</circe:values_unit>
+    <circe:epoch>0.000000</circe:epoch>
+    <circe:precision_code_init>6</circe:precision_code_init>
+    <circe:layout>CONSTANT</circe:layout>
+</circe:frameTransformation>
+<circe:frameTransformation gml:id="EGM2008_TA-IDP">
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>VERTICAL</circe:crs_type>
+    <circe:data_file_name>EGM2008_TA-IdP.tac</circe:data_file_name>
+    <circe:metadata_file_name>EGM2008_TA-IdP.xml</circe:metadata_file_name>
+    <circe:file_type></circe:file_type>
+    <circe:values_number>1</circe:values_number>
+    <circe:init_values>0</circe:init_values>
+    <circe:source_frame>REA034</circe:source_frame>
+    <circe:target_frame>REG5490001</circe:target_frame>
+    <circe:node_frame>UNDEFINED</circe:node_frame>
+    <circe:node_frame_info>TARGET</circe:node_frame_info>
+</circe:frameTransformation>
+<circe:frameTransformation gml:id="EGM2008_TA">
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>VERTICAL</circe:crs_type>
+    <circe:data_file_name>EGM2008_TA.tac</circe:data_file_name>
+    <circe:metadata_file_name>EGM2008_TA.xml</circe:metadata_file_name>
+    <circe:file_type></circe:file_type>
+    <circe:values_number>1</circe:values_number>
+    <circe:init_values>0</circe:init_values>
+    <circe:source_frame>REA999</circe:source_frame>
+    <circe:target_frame>REG6790001</circe:target_frame>
+    <circe:node_frame>UNDEFINED</circe:node_frame>
+    <circe:node_frame_info>TARGET</circe:node_frame_info>
+</circe:frameTransformation>
+<gml:Conversion gml:id="PRC0901">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/coordinateOperation/IGNF/PRC0901</gml:identifier>
+    <gml:name>STEREOGRAPHIQUE POLAIRE SUD TERRE ADELIE (TANGENTE)</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <gml:usesMethod xlink:href="PRCM094from2Dto2D"/>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:ParameterValue uom="METERS" gml:name="X0">300000.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="METERS" gml:name="Y0">-2299363.481999999843538</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="LAMBDA0">140.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI0">-90.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI1">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI2">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue gml:name="K0">0.960272946000000</gml:ParameterValue>
+</gml:Conversion>
+<gml:Conversion gml:id="PRC0909">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/coordinateOperation/IGNF/PRC0909</gml:identifier>
+    <gml:name>STEREOGRAPHIQUE POLAIRE SUD TERRE ADELIE (SECANTE)</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <gml:usesMethod xlink:href="PRCM095from2Dto2D"/>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:ParameterValue uom="METERS" gml:name="X0">300000.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="METERS" gml:name="Y0">200000.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="LAMBDA0">140.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI0">-67.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI1">-67.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI2">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue gml:name="K0">0.000000000000000</gml:ParameterValue>
+</gml:Conversion>
+<gml:Conversion gml:id="PRC0353">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/coordinateOperation/IGNF/PRC0353</gml:identifier>
+    <gml:name>UTM SUD FUSEAU 53</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <gml:usesMethod xlink:href="PRCM030from2Dto2D"/>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:ParameterValue uom="METERS" gml:name="X0">500000.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="METERS" gml:name="Y0">10000000.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="LAMBDA0">135.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI0">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI1">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI2">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue gml:name="K0">0.999600000000000</gml:ParameterValue>
+</gml:Conversion>
+<gml:Conversion gml:id="PRC0354">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/coordinateOperation/IGNF/PRC0354</gml:identifier>
+    <gml:name>UTM SUD FUSEAU 54</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <gml:usesMethod xlink:href="PRCM030from2Dto2D"/>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:ParameterValue uom="METERS" gml:name="X0">500000.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="METERS" gml:name="Y0">10000000.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="LAMBDA0">141.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI0">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI1">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI2">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue gml:name="K0">0.999600000000000</gml:ParameterValue>
+</gml:Conversion>
+<gml:ProjectedCRS gml:id="CAPBP55STPSTAT">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ1170901</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>Cap Bienvenue 1955 - Stéréo Polaire Sud (tangente)</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="DEGREES">132.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">144.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0901"/>
+    <gml:baseGeographicCRS xlink:href="REG1170001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG1170001"/>
+</gml:ProjectedCRS>
+<gml:ProjectedCRS gml:id="CAPBP55STPSTAS">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ1170909</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>Cap Bienvenue 1955 - Stéréo Polaire Sud (sécante)</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="DEGREES">132.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">144.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0909"/>
+    <gml:baseGeographicCRS xlink:href="REG1170001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG1170001"/>
+</gml:ProjectedCRS>
+<gml:ProjectedCRS gml:id="CAPJP55STPSTAT">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ1230901</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>Cap Jules 1955 - Stéréo Polaire Sud (tangente)</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="DEGREES">132.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">144.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0901"/>
+    <gml:baseGeographicCRS xlink:href="REG1230001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG1230001"/>
+</gml:ProjectedCRS>
+<gml:ProjectedCRS gml:id="CAPJP55STPSTAS">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ1230909</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>Cap Jules 1955 - Stéréo Polaire Sud (Sécante)</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="DEGREES">132.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">144.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0909"/>
+    <gml:baseGeographicCRS xlink:href="REG1230001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG1230001"/>
+</gml:ProjectedCRS>
+<gml:ProjectedCRS gml:id="PETRE72SPSTAT">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ4860901</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>Petrels IGN 1972 - Stéréo Polaire Sud (tangente)</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="DEGREES">132.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">144.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0901"/>
+    <gml:baseGeographicCRS xlink:href="REG4860001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG4860001"/>
+</gml:ProjectedCRS>
+<gml:ProjectedCRS gml:id="PETRE72SPSTA">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ4860909</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>Petrels IGN 1972 - Stéréo Polaire Sud (sécante)</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="DEGREES">132.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">144.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0909"/>
+    <gml:baseGeographicCRS xlink:href="REG4860001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG4860001"/>
+</gml:ProjectedCRS>
+<gml:ProjectedCRS gml:id="PGP50STEREPS">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ4920901</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>Pointe Geologie Perroud 1950 - Stéréo Polaire Sud (tangente)</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="DEGREES">132.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">144.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0901"/>
+    <gml:baseGeographicCRS xlink:href="REG4920001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG4920001"/>
+</gml:ProjectedCRS>
+<gml:ProjectedCRS gml:id="PGP50STPSTA">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ4920909</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>Pointe Geologie Perroud 1950 - Stéréo Polaire Sud (sécante)</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="DEGREES">132.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">144.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0909"/>
+    <gml:baseGeographicCRS xlink:href="REG4920001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG4920001"/>
+</gml:ProjectedCRS>
+<gml:ProjectedCRS gml:id="PMARP55SPSTAT">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ4980901</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>Port Martin 1955 - Stéréo Polaire Sud (tangente)</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="DEGREES">132.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">144.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0901"/>
+    <gml:baseGeographicCRS xlink:href="REG4980001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG4980001"/>
+</gml:ProjectedCRS>
+<gml:ProjectedCRS gml:id="PMARP55SPSTAS">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ4980909</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>Port Martin 1955 - Stéréo Polaire Sud (sécante)</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="DEGREES">132.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">144.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0909"/>
+    <gml:baseGeographicCRS xlink:href="REG4980001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG4980001"/>
+</gml:ProjectedCRS>
+<gml:ProjectedCRS gml:id="RGTAAFUTM53S">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ5490353</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>RGTAAF07 UTM Sud fuseau 53</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="DEGREES">132.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">144.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0353"/>
+    <gml:baseGeographicCRS xlink:href="REG5490001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG5490001"/>
+</gml:ProjectedCRS>
+<gml:ProjectedCRS gml:id="WGS84UTM53S">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ6790353</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>WGS84 UTM Sud fuseau 53</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="DEGREES">132.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">144.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0353"/>
+    <gml:baseGeographicCRS xlink:href="REG6790001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG6790001"/>
+</gml:ProjectedCRS>
+<gml:ProjectedCRS gml:id="RGTAAFUTM54S">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ5490354</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>RGTAAF07 UTM Sud fuseau 54</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="DEGREES">132.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">144.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0354"/>
+    <gml:baseGeographicCRS xlink:href="REG5490001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG5490001"/>
+</gml:ProjectedCRS>
+<gml:ProjectedCRS gml:id="WGS84UTM54S">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ6790354</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>WGS84 UTM Sud fuseau 54</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="DEGREES">132.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">144.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-68.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">-66.000000000000000</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0354"/>
+    <gml:baseGeographicCRS xlink:href="REG6790001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG6790001"/>
+</gml:ProjectedCRS>
+</CT_CrsCatalogue>
+</CIRCE>

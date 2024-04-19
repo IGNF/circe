@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['m_5f_754',['m_',['../conversioncore_8cpp.html#a08d411cd9c859e7c2304c0b7271a158d',1,'m_(double e2, double phi):&#160;conversioncore.cpp'],['../conversioncore_8h.html#a08d411cd9c859e7c2304c0b7271a158d',1,'m_(double e2, double phi):&#160;conversioncore.cpp']]],
+  ['merctrgeo_755',['MercTrGeo',['../conversioncore_8cpp.html#a51c8c7da76898def7d9225fb6da4a13c',1,'MercTrGeo(double lambda0, double n, double xs, double ys, double e2, double *lambda, double *phi, double x, double y):&#160;conversioncore.cpp'],['../conversioncore_8h.html#a51c8c7da76898def7d9225fb6da4a13c',1,'MercTrGeo(double lambda0, double n, double xs, double ys, double e2, double *lambda, double *phi, double x, double y):&#160;conversioncore.cpp']]],
+  ['meridian_756',['Meridian',['../classcirce_1_1_meridian.html#abef3855999cb55cec9b7bed253e56ac7',1,'circe::Meridian::Meridian()'],['../classcirce_1_1_meridian.html#adba3a4778c21c10952127027469b8549',1,'circe::Meridian::Meridian(const Meridian &amp;B)']]],
+  ['modconvsterobl_757',['ModConvSterObl',['../conversioncore_8cpp.html#a69d4a84735931ef2cb37672538c3c558',1,'ModConvSterObl(double a, double lambda, double phi, double e2, double c, double n1, double n2, double lambdac, double phic, double *conv, double *scfact):&#160;conversioncore.cpp'],['../conversioncore_8h.html#a69d4a84735931ef2cb37672538c3c558',1,'ModConvSterObl(double a, double lambda, double phi, double e2, double c, double n1, double n2, double lambdac, double phic, double *conv, double *scfact):&#160;conversioncore.cpp']]],
+  ['modifyandvalidatemetadata_758',['ModifyAndValidateMetaData',['../classcirce_1_1_transformation.html#a57a7e1646c2b45585b8d00f922d6d062',1,'circe::Transformation']]]
+];

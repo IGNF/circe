@@ -1,0 +1,137 @@
+﻿CIRCE V5
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des ellipsoides utilises------------------------------------------------------------
+*ELG-num-----a-------------b---------1/f----------e²--------nom------------------------------------------
+
+ELG 001 6378388.0000 6356911.9461 297.000000 0.006722670022 INTERNATIONAL-HAYFORD 1909 (INTERNATIONAL 1924)
+ELG 037 6378137.0000 6356752.3141 298.257222 0.006694380023 IAG GRS 1980
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des meridiens utilises--------------------------------------------------------------
+*LGO-num-unite-valeur--nom-------------------------------------------------------------------------------
+
+LGO 01 01   0.0000000 GREENWICH (OBSERVATOIRE)
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des referentiels geodesiques utilises-----------------------------------------------
+*REG-num-elg-lgo-dimension-id-nom---------------------------------------------------------------------------
+
+REG 117 001 01 3D CAPBP55 CAP BIENVENUE - PERROUD 1955 
+REG 123 001 01 3D CAPJP55 CAP JULES - PERROUD 1955 
+REG 486 001 01 3D PETRELS72 PETRELS-IGN 1972 
+REG 492 001 01 3D PGP50 POINTE GEOLOGIE-PERROUD 1950 
+REG 498 001 01 3D PMARP55 PORT-MARTIN - PERROUD 1955 
+REG 549 037 01 3D RGTAAF07 RGTAAF07 (RESEAU GEODESIQUE DES TAAF 2007) 
+REG 679 037 01 3D WGS84 WGS 84 
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des referentiels altimetriques utilises---------------------------------------------
+*---------REA num id Nom------------------------------------------------------------------------------------
+
+REA 004 TERAD51 PORT-MARTIN 
+REA 034 PETRELS52 EPF 1952 (ILE DES PETRELS)
+REA 999 EGM2008 EGM2008
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des parametres de transformation standard utilises----------------------------------
+*TSG-num--reg1-reg2-prec---Tx---Ty---Tz---Ech---Rx---Ry---Rz dTx dTy dTz dEch dRx dRy dRz Epoque cumul----------------------
+
+* CALCUL SGN (MAI 1997) POUR CENTRE GEOGRAPHIQUE INTERARMEES (ARCUEIL)
+TSG 608 486 679 6    365.000   194.000   166.000   0.000  0.000  0.000  0.000  0 0 0 0 0 0 0 0 0
+* Précision de la transformation suivante issue de RT/G 83 (résidus de 17 cm)
+TSG 815 492 549 6    324.912   153.282   172.026   0.000  0.000  0.000  0.000  0 0 0 0 0 0 0 0 0
+
+*---------------------------------------------------------------------------------------------------------------
+*---------definition des projections cartographiques utilisees--------------------------------------------------
+*PRC-num-mode------X0------------Y0-----Lgo-unite_ang-l0-j0-------delta-----------j1---------j2---c-type-nom
+
+PRC 0901 5    300000.0000  -2299363.4820  01 10  140.00  -90.00 0.960272946    0.00000    0.00000 0  9 STEREOGRAPHIQUE POLAIRE SUD TERRE ADELIE (TANGENTE)
+PRC 0909 7    300000.0000    200000.0000  01 10  140.00  -67.00 0.000000000  -67.00000    0.00000 1  9 STEREOGRAPHIQUE POLAIRE SUD TERRE ADELIE (SECANTE)
+PRC 0353 0    500000.0000  10000000.0000  01 10  135.00    0.00 0.9996 0 0 0 3 UTM SUD FUSEAU 53
+PRC 0354 0    500000.0000  10000000.0000  01 10  141.00    0.00 0.9996 0 0 0 3 UTM SUD FUSEAU 54
+
+*--------------------------------------------------------------------------------------------------------
+*---------associations referentiels geodesiques/projections cartographiques et zones d'application-------
+*---------PROJ reg prc unite lonMin latMin lonMax latMax id Nom------------------------------------------
+
+PROJ 117 0901 02 132.00 -68.00 144.00 -66.00 CAPBP55STPSTAT Cap Bienvenue 1955 - Stéréo Polaire Sud (tangente)
+PROJ 117 0909 02 132.00 -68.00 144.00 -66.00 CAPBP55STPSTAS Cap Bienvenue 1955 - Stéréo Polaire Sud (sécante)
+PROJ 123 0901 02 132.00 -68.00 144.00 -66.00 CAPJP55STPSTAT Cap Jules 1955 - Stéréo Polaire Sud (tangente)
+PROJ 123 0909 02 132.00 -68.00 144.00 -66.00 CAPJP55STPSTAS Cap Jules 1955 - Stéréo Polaire Sud (Sécante)
+PROJ 486 0901 02 132.00 -68.00 144.00 -66.00 PETRE72SPSTAT Petrels IGN 1972 - Stéréo Polaire Sud (tangente)
+PROJ 486 0909 02 132.00 -68.00 144.00 -66.00 PETRE72SPSTA Petrels IGN 1972 - Stéréo Polaire Sud (sécante)
+PROJ 492 0901 02 132.00 -68.00 144.00 -66.00 PGP50STEREPS Pointe Geologie Perroud 1950 - Stéréo Polaire Sud (tangente)
+PROJ 492 0909 02 132.00 -68.00 144.00 -66.00 PGP50STPSTA Pointe Geologie Perroud 1950 - Stéréo Polaire Sud (sécante)
+PROJ 498 0901 02 132.00 -68.00 144.00 -66.00 PMARP55SPSTAT Port Martin 1955 - Stéréo Polaire Sud (tangente)
+PROJ 498 0909 02 132.00 -68.00 144.00 -66.00 PMARP55SPSTAS Port Martin 1955 - Stéréo Polaire Sud (sécante)
+PROJ 549 0353 02 132.00 -68.00 144.00 -66.00 RGTAAFUTM53S RGTAAF07 UTM Sud fuseau 53
+PROJ 679 0353 02 132.00 -68.00 144.00 -66.00 WGS84UTM53S WGS84 UTM Sud fuseau 53
+PROJ 549 0354 02 132.00 -68.00 144.00 -66.00 RGTAAFUTM54S RGTAAF07 UTM Sud fuseau 54
+PROJ 679 0354 02 132.00 -68.00 144.00 -66.00 WGS84UTM54S WGS84 UTM Sud fuseau 54
+
+*--------------------------------------------------------------------------------------------------------
+*---------associations grille geoide/referentiel geodesique/referentiel altimetrique---------------------
+*---------GR1D "nomfichier" reg [rea]...[rea]------------------------------------------------------------
+
+* Premier modèle : EGM2008 recalé sur 2 points GPS nivelés, limité à l'étendue de EPF1952 (île des Pétrels); précision estimée à 10 cm au mieux
+* Second modèle : EGM2008 non recalé pour le reste du territoire; précision inconnue
+GR1D EGM2008_TA-IdP.tac  549  034
+GR1D EGM2008_TA.tac  679  999
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des zones d'application des referentiels geodesiques--------------------------------
+*---------ZNE reg unite lonMin latMin lonMax latMax------------------------------------------------------
+*---------Toutes les longitudes sont rapportees au Meridien de Greenwich---------------------------------
+
+ZNE 117 02  139.00 -68.00 142.00  -66.00
+ZNE 123 02  139.00 -68.00 142.00  -66.00
+ZNE 486 02  139.00 -68.00 142.00  -66.00
+ZNE 492 02  139.00 -68.00 142.00  -66.00
+ZNE 498 02  139.00 -68.00 142.00  -66.00
+ZNE 549 02  139.00 -68.00 142.00  -66.00
+ZNE 679 02  139.00 -68.00 142.00  -66.00
+
+*--------------------------------------------------------------------------------------------------------
+*---------associations referentiels geodesiques/type de coordonnees possibles----------------------------
+*---------TYPCOOR reg [01:Cartesiennes] [02:Geographiques] [03:PLanes] ----------------------------------
+
+TYPCOOR 117 01 02 03
+TYPCOOR 123 01 02 03
+TYPCOOR 486 01 02 03
+TYPCOOR 492 01 02 03
+TYPCOOR 498 01 02 03
+TYPCOOR 549 01 02 03
+TYPCOOR 679 01 02 03
+
+*--------------------------------------------------------------------------------------------------------
+*---------associations referentiels geodesiques/unites utilisables---------------------------------------
+*----------------------------------remarque : si aucune info prend toutes les unites possibles----------
+*---------UNIT reg [unite]...[unite]---------------------------------------------------------------------
+
+UNIT 117
+UNIT 123
+UNIT 486
+UNIT 492
+UNIT 498
+UNIT 549
+UNIT 679
+
+*---------01 : radians
+*---------02 : degres decimaux
+*---------03 : grades
+*---------04 : heures decimales
+*---------05 : secondes de degre
+*---------06 : secondes d'heure
+
+*---------10 : degres, minutes, secondes
+*---------11 : heures, minutes, secondes
+*---------12 : degres, minutes, decimales
+
+
+*--------------------------------------------------------------------------------------------------------
+*--------------------------------------------------------------------------------------------------------
+*             Fichier genere le Vendredi 10 Mars 2017 a 10:51:46 par TGattacceca sur DEL1207W115.
+*             Fichier édité pour Circé v5 par T. Gattacceca - Version 1.0 du 24 mars 2017
+*--------------------------------------------------------------------------------------------------------
+*--------------------------------------------------------------------------------------------------------

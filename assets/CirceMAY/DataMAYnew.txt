@@ -1,0 +1,102 @@
+﻿CIRCE V5
+*--------------------------------------------------------------------------------------------------------
+*---------definition des ellipsoides utilises------------------------------------------------------------
+*---------ELG num a b 1/f e² nom-------------------------------------------------------------------------
+
+ELG 001 6378388.0000 6356911.9461 297.000000 .006722670022 Hayford 1909 (International)
+* mise à jour de la valeur e2 du GRS 1980 en fonction des paramètres de définition
+ELG 037 6378137.0000 6356752.3141 298.257222101 .006694380023 GRS 1980
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des meridiens utilises--------------------------------------------------------------
+*---------LGO num unite valeur nom-----------------------------------------------------------------------
+
+LGO 01 01   0.          Greenwich
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des referentiels geodesiques utilises-----------------------------------------------
+*---------REG num elg lgo dimension short nom------------------------------------------------------------------
+* numero du nouveau referentiel a definir en BDG
+
+REG 702 037 01	3D	RGM04 RGM04 (Réseau Géodésique de Mayotte 2004)
+REG 701 001 01	2D	CAD97 CADASTRE 1997
+REG 318 001 01	2D	MAYO50 COMBANI 1950
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des referentiels altimetriques utilises---------------------------------------------
+*---------REA num short Nom------------------------------------------------------------------------------------
+
+REA 038 MAYO53 SHOM 1953
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des parametres de transformation standard utilises----------------------------------
+*---------TSG num reg1 reg2 prec Tx  Ty  Tz  Ech  Rx  Ry  Rz---------------------------------------------
+* nouvelles valeurs calcul TG juillet 2004
+* et numeros des TSG defini en BDG le 16/09/2004
+* modification TG le 03/06/2008 :
+* rétablissement des signes et sens de la transformation inversé  pour mise en conformité avec RT/G 53
+TSG 10789 318 702 3  -599.928   -275.552   -195.665  49.2814  -0.0835  -0.4715    0.0602 0 0 0 0 0 0 0 0 0
+TSG 10788 701 702 3  -381.788    -57.501   -256.673   0.0000   0.0000   0.0000    0.0000 0 0 0 0 0 0 0 0 0
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des projections cartographiques utilisees-------------------------------------------
+*---------PRC num mode X0  Y0   Lgo   unité_ang  l0  j0  delta  j1  j2  c  type nom-----------------
+
+PRC 0338 0 500000.    10000000.     01 10 45.   0.     0.9996      0     0      0 3  UTM Sud 38
+
+*--------------------------------------------------------------------------------------------------------
+*---------associations referentiels geodesiques/projections cartographiques et zones d'application-------
+*---------PROJ reg prc unite lonMin latMin lonMax latMax-------------------------------------------------
+* Nouvelles limites en 2021 : celles du repère de référence RGM04
+PROJ 701 338 02 44.94  -13.06 45.41 -12.49 CAD97UTM38S  CAD97 - UTM Sud 38
+PROJ 318 338 02 44.94  -13.06 45.41 -12.49 MAYO50UTM38S MAYO50 - UTM Sud 38
+
+* Nouvelles limites pour le SBI en 2012
+* Attention : les limites sortent des bornes de la grille ggm04v1.tac
+PROJ 702 338 02 44.533  -13.076 45.401 -12.321 RGM04UTM38S  RGM04 - UTM Sud 38
+
+*--------------------------------------------------------------------------------------------------------
+*---------associations grille geoide/referentiel geodesique/referentiel altimetrique---------------------
+*---------GR1D "nomfichier" reg [rea]...[rea]------------------------------------------------------------
+* Nouvelle grille le 22 juin 2004
+GR1D ggm04v1.tac 702 038
+
+*---------definition des zones d'application des referentiels geodesiques---------------
+*---------ZNE reg unite lonMin latMin lonMax latMax-------------------------------------
+*---------Toutes les longitudes sont rapportées au Méridien de Greenwich----------------
+*------Limites choisies pour être cohérentes avec les jeux tests de la version 3.2------
+
+ZNE 702 02 44.94 -13.06 45.41 -12.49
+ZNE 701 02 44.94 -13.06 45.41 -12.49
+ZNE 318 02 44.94 -13.06 45.41 -12.49
+
+*--------------------------------------------------------------------------------------------------------
+*---------associations referentiels geodesiques/type de coordonnées possibles----------------------------
+*---------TYPCOOR reg [01:Cartesiennes] [02:Geographiques] [03:Planes] ------------------------------
+
+TYPCOOR 702 01 02 03
+TYPCOOR 701 02 03
+TYPCOOR 318 02 03
+
+*--------------------------------------------------------------------------------------------------------
+*---------associations referentiels geodesiques/unites utilisables---------------------------------------
+*-----------------------------------remarque : si aucune info prend toutes les unités possibles----------
+*---------UNIT reg [unite]...[unite]---------------------------------------------------------------------
+
+UNIT 702
+UNIT 701
+UNIT 318
+
+
+*---------01 : radians
+*---------02 : degrés décimaux
+*---------03 : grades
+*---------04 : heures décimales
+*---------05 : secondes de degré
+*---------06 : secondes d'heure
+
+*---------10 : degrés, minutes, secondes
+*---------11 : heures, minutes, secondes
+*---------12 : degrés, minutes, décimales
+*--------------------------------------------------------------------------------------------------------
+

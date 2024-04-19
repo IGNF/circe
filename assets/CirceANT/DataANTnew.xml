@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CIRCE>
+<CT_CrsCatalogue xmlns:gml="http://www.opengis.net/gml" xmlns:gmd="http://www.isotc211.org/2005/gmd">
+<gml:Ellipsoid gml:id="ELG001">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/ellipsoid/IGNF/ELG001</gml:identifier>
+    <gml:name>International (Hayford 1909)</gml:name>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:semiMajorAxis uom="METERS">6378388.000000000000000</gml:semiMajorAxis>
+    <gml:semiMinorAxis uom="METERS">6356911.946100000292063</gml:semiMinorAxis>
+    <circe:squareEccentricity>0.006722670022000</circe:squareEccentricity>
+    <gml:inverseFlattening>297.000000000000000</gml:inverseFlattening>
+</gml:Ellipsoid>
+<gml:Ellipsoid gml:id="ELG037">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/ellipsoid/IGNF/ELG037</gml:identifier>
+    <gml:name>GRS 1980</gml:name>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:semiMajorAxis uom="METERS">6378137.000000000000000</gml:semiMajorAxis>
+    <gml:semiMinorAxis uom="METERS">6356752.314100000075996</gml:semiMinorAxis>
+    <circe:squareEccentricity>0.006694380023000</circe:squareEccentricity>
+    <gml:inverseFlattening>298.257222101000025</gml:inverseFlattening>
+</gml:Ellipsoid>
+<gml:PrimeMeridian gml:id="LGO01">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/meridian/IGNF/LGO01</gml:identifier>
+    <gml:name>Greenwich</gml:name>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:greenwichLongitude uom="RADIANS">0.000000000000000</gml:greenwichLongitude>
+</gml:PrimeMeridian>
+<circe:geodeticReferenceSystem gml:id="REGI140001">
+    <gml:name>ITRF2014</gml:name>
+    <circe:dimension>4D</circe:dimension>
+    <gmd:westBoundLongitude uom="DEGREES">-63.176000000000002</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">-60.500000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">14.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">18.175999999999998</gmd:northBoundLatitude>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:usesEllipsoid xlink:href="ELG037"/>
+    <circe:usesForTransformation xlink:href="REGI140001"/>
+</circe:geodeticReferenceSystem>
+<circe:geodeticReferenceFrame gml:id="REGI140001">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/datum/IGNF/REGI140001</gml:identifier>
+    <gml:name>ITRF2014</gml:name>
+	<circe:isKeyGeodeticFrame>1</circe:isKeyGeodeticFrame>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesReferenceSystem xlink:href="REGI140001"/>
+</circe:geodeticReferenceFrame>
+<gml:GeocentricCRS gml:id="ITRF2014">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geocentric</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REGI140001"/>
+</gml:GeocentricCRS>
+<gml:GeographicCRS gml:id="ITRF2014G">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geographic</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOGRAPHIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REGI140001"/>
+</gml:GeographicCRS>
+<circe:geodeticReferenceSystem gml:id="REG4240001">
+    <gml:name>Martinique : Fort Desaix</gml:name>
+    <circe:dimension>2D</circe:dimension>
+    <gmd:westBoundLongitude uom="DEGREES">-61.250000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">-60.749000000000002</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">14.273999999999999</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">15.000999999999999</gmd:northBoundLatitude>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:usesEllipsoid xlink:href="ELG001"/>
+    <circe:usesForTransformation xlink:href="REG4240001"/>
+</circe:geodeticReferenceSystem>
+<circe:geodeticReferenceFrame gml:id="REG4240001">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/datum/IGNF/REG4240001</gml:identifier>
+    <gml:name>Martinique : Fort Desaix</gml:name>
+	<circe:isKeyGeodeticFrame>0</circe:isKeyGeodeticFrame>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesReferenceSystem xlink:href="REG4240001"/>
+</circe:geodeticReferenceFrame>
+<gml:GeographicCRS gml:id="MARTFDG">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geographic</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOGRAPHIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG4240001"/>
+</gml:GeographicCRS>
+<circe:geodeticReferenceSystem gml:id="REG4250001">
+    <gml:name>Guadeloupe : Sainte-Anne</gml:name>
+    <circe:dimension>2D</circe:dimension>
+    <gmd:westBoundLongitude uom="DEGREES">-61.826000000000001</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">-60.774000000000001</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">15.824000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">16.600999999999999</gmd:northBoundLatitude>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:usesEllipsoid xlink:href="ELG001"/>
+    <circe:usesForTransformation xlink:href="REG4250001"/>
+</circe:geodeticReferenceSystem>
+<circe:geodeticReferenceFrame gml:id="REG4250001">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/datum/IGNF/REG4250001</gml:identifier>
+    <gml:name>Guadeloupe : Sainte-Anne</gml:name>
+	<circe:isKeyGeodeticFrame>0</circe:isKeyGeodeticFrame>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesReferenceSystem xlink:href="REG4250001"/>
+</circe:geodeticReferenceFrame>
+<gml:GeographicCRS gml:id="GUADANNG">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geographic</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOGRAPHIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG4250001"/>
+</gml:GeographicCRS>
+<circe:geodeticReferenceSystem gml:id="REG4260001">
+    <gml:name>St-Martin St-Barth : Fort Marigot</gml:name>
+    <circe:dimension>2D</circe:dimension>
+    <gmd:westBoundLongitude uom="DEGREES">-63.176000000000002</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">-62.250999999999998</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">17.824000000000002</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">18.175999999999998</gmd:northBoundLatitude>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:usesEllipsoid xlink:href="ELG001"/>
+    <circe:usesForTransformation xlink:href="REG4260001"/>
+</circe:geodeticReferenceSystem>
+<circe:geodeticReferenceFrame gml:id="REG4260001">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/datum/IGNF/REG4260001</gml:identifier>
+    <gml:name>St-Martin St-Barth : Fort Marigot</gml:name>
+	<circe:isKeyGeodeticFrame>0</circe:isKeyGeodeticFrame>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesReferenceSystem xlink:href="REG4260001"/>
+</circe:geodeticReferenceFrame>
+<gml:GeographicCRS gml:id="GUADFMG">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geographic</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOGRAPHIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG4260001"/>
+</gml:GeographicCRS>
+<circe:geodeticReferenceSystem gml:id="REG6430001">
+    <gml:name>Guadeloupe : WGS 84</gml:name>
+    <circe:dimension>3D</circe:dimension>
+    <gmd:westBoundLongitude uom="DEGREES">-61.826000000000001</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">-60.774000000000001</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">15.824000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">16.600999999999999</gmd:northBoundLatitude>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:usesEllipsoid xlink:href="ELG037"/>
+    <circe:usesForTransformation xlink:href="REG6430001"/>
+</circe:geodeticReferenceSystem>
+<circe:geodeticReferenceFrame gml:id="REG6430001">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/datum/IGNF/REG6430001</gml:identifier>
+    <gml:name>Guadeloupe : WGS 84</gml:name>
+	<circe:isKeyGeodeticFrame>0</circe:isKeyGeodeticFrame>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesReferenceSystem xlink:href="REG6430001"/>
+</circe:geodeticReferenceFrame>
+<gml:GeocentricCRS gml:id="WGS84GUAD">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geocentric</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG6430001"/>
+</gml:GeocentricCRS>
+<gml:GeographicCRS gml:id="WGS84GUADG">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geographic</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOGRAPHIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG6430001"/>
+</gml:GeographicCRS>
+<circe:geodeticReferenceSystem gml:id="REG6440001">
+    <gml:name>Martinique : WGS 84</gml:name>
+    <circe:dimension>3D</circe:dimension>
+    <gmd:westBoundLongitude uom="DEGREES">-61.250000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">-60.749000000000002</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">14.273999999999999</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">15.000999999999999</gmd:northBoundLatitude>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:usesEllipsoid xlink:href="ELG037"/>
+    <circe:usesForTransformation xlink:href="REG6440001"/>
+</circe:geodeticReferenceSystem>
+<circe:geodeticReferenceFrame gml:id="REG6440001">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/datum/IGNF/REG6440001</gml:identifier>
+    <gml:name>Martinique : WGS 84</gml:name>
+	<circe:isKeyGeodeticFrame>0</circe:isKeyGeodeticFrame>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesReferenceSystem xlink:href="REG6440001"/>
+</circe:geodeticReferenceFrame>
+<gml:GeocentricCRS gml:id="WGS84MART">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geocentric</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG6440001"/>
+</gml:GeocentricCRS>
+<gml:GeographicCRS gml:id="WGS84MARTG">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geographic</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOGRAPHIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG6440001"/>
+</gml:GeographicCRS>
+<circe:geodeticReferenceSystem gml:id="REG6450001">
+    <gml:name>St-Martin St-Barth : WGS 84</gml:name>
+    <circe:dimension>3D</circe:dimension>
+    <gmd:westBoundLongitude uom="DEGREES">-63.176000000000002</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">-62.250999999999998</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">17.824000000000002</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">18.175999999999998</gmd:northBoundLatitude>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:usesEllipsoid xlink:href="ELG037"/>
+    <circe:usesForTransformation xlink:href="REG6450001"/>
+</circe:geodeticReferenceSystem>
+<circe:geodeticReferenceFrame gml:id="REG6450001">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/datum/IGNF/REG6450001</gml:identifier>
+    <gml:name>St-Martin St-Barth : WGS 84</gml:name>
+	<circe:isKeyGeodeticFrame>0</circe:isKeyGeodeticFrame>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesReferenceSystem xlink:href="REG6450001"/>
+</circe:geodeticReferenceFrame>
+<gml:GeocentricCRS gml:id="WGS84SMSB">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geocentric</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG6450001"/>
+</gml:GeocentricCRS>
+<gml:GeographicCRS gml:id="WGS84SMSBG">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geographic</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOGRAPHIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG6450001"/>
+</gml:GeographicCRS>
+<circe:geodeticReferenceSystem gml:id="REG9150001">
+    <gml:name>Antilles : RGAF09</gml:name>
+    <circe:dimension>3D</circe:dimension>
+    <gmd:westBoundLongitude uom="DEGREES">-63.176000000000002</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">-60.500000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">14.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">18.175999999999998</gmd:northBoundLatitude>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:usesEllipsoid xlink:href="ELG037"/>
+    <circe:usesForTransformation xlink:href="REG9150001"/>
+</circe:geodeticReferenceSystem>
+<circe:geodeticReferenceFrame gml:id="REG9150001">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/datum/IGNF/REG9150001</gml:identifier>
+    <gml:name>Antilles : RGAF09</gml:name>
+	<circe:isKeyGeodeticFrame>0</circe:isKeyGeodeticFrame>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesReferenceSystem xlink:href="REG9150001"/>
+</circe:geodeticReferenceFrame>
+<gml:GeocentricCRS gml:id="RGAF09">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geocentric</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG9150001"/>
+</gml:GeocentricCRS>
+<gml:GeographicCRS gml:id="RGAF09G">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>geographic</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>GEOGRAPHIC</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REG9150001"/>
+</gml:GeographicCRS>
+<circe:verticalReferenceSystem gml:id="REA006">
+    <gml:name>IGN 1988 Grande Basse Terre</gml:name>
+    <gmd:westBoundLongitude uom="RADIANS">0.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="RADIANS">0.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="RADIANS">0.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="RADIANS">0.000000000000000</gmd:northBoundLatitude>
+</circe:verticalReferenceSystem>
+<circe:verticalReferenceFrame gml:id="REA006">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">REA006</gml:identifier>
+    <gml:name>IGN 1988 Grande Basse Terre</gml:name>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesVerticalSystem xlink:href="REA006"/>
+</circe:verticalReferenceFrame>
+<gml:VerticalCRS gml:id="GUAD88">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>vertical</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>VERTICAL</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REA006"/>
+</gml:VerticalCRS>
+<circe:verticalReferenceSystem gml:id="REA007">
+    <gml:name>IGN 1988 Marie-Galante</gml:name>
+    <gmd:westBoundLongitude uom="RADIANS">0.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="RADIANS">0.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="RADIANS">0.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="RADIANS">0.000000000000000</gmd:northBoundLatitude>
+</circe:verticalReferenceSystem>
+<circe:verticalReferenceFrame gml:id="REA007">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">REA007</gml:identifier>
+    <gml:name>IGN 1988 Marie-Galante</gml:name>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesVerticalSystem xlink:href="REA007"/>
+</circe:verticalReferenceFrame>
+<gml:VerticalCRS gml:id="GUAD88MG">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>vertical</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>VERTICAL</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REA007"/>
+</gml:VerticalCRS>
+<circe:verticalReferenceSystem gml:id="REA053">
+    <gml:name>IGN 2008 La Désirade</gml:name>
+    <gmd:westBoundLongitude uom="RADIANS">0.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="RADIANS">0.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="RADIANS">0.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="RADIANS">0.000000000000000</gmd:northBoundLatitude>
+</circe:verticalReferenceSystem>
+<circe:verticalReferenceFrame gml:id="REA053">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">REA053</gml:identifier>
+    <gml:name>IGN 2008 La Désirade</gml:name>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesVerticalSystem xlink:href="REA053"/>
+</circe:verticalReferenceFrame>
+<gml:VerticalCRS gml:id="GUAD2008LD">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>vertical</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>VERTICAL</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REA053"/>
+</gml:VerticalCRS>
+<circe:verticalReferenceSystem gml:id="REA008">
+    <gml:name>IGN 1988 Les Saintes</gml:name>
+    <gmd:westBoundLongitude uom="RADIANS">0.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="RADIANS">0.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="RADIANS">0.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="RADIANS">0.000000000000000</gmd:northBoundLatitude>
+</circe:verticalReferenceSystem>
+<circe:verticalReferenceFrame gml:id="REA008">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">REA008</gml:identifier>
+    <gml:name>IGN 1988 Les Saintes</gml:name>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesVerticalSystem xlink:href="REA008"/>
+</circe:verticalReferenceFrame>
+<gml:VerticalCRS gml:id="GUAD88LS">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>vertical</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>VERTICAL</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REA008"/>
+</gml:VerticalCRS>
+<circe:verticalReferenceSystem gml:id="REA012">
+    <gml:name>IGN 1988 Saint-Barthélemy</gml:name>
+    <gmd:westBoundLongitude uom="RADIANS">0.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="RADIANS">0.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="RADIANS">0.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="RADIANS">0.000000000000000</gmd:northBoundLatitude>
+</circe:verticalReferenceSystem>
+<circe:verticalReferenceFrame gml:id="REA012">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">REA012</gml:identifier>
+    <gml:name>IGN 1988 Saint-Barthélemy</gml:name>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesVerticalSystem xlink:href="REA012"/>
+</circe:verticalReferenceFrame>
+<gml:VerticalCRS gml:id="GUAD88SB">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>vertical</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>VERTICAL</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REA012"/>
+</gml:VerticalCRS>
+<circe:verticalReferenceSystem gml:id="REA009">
+    <gml:name>IGN 1988 Saint-Martin</gml:name>
+    <gmd:westBoundLongitude uom="RADIANS">0.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="RADIANS">0.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="RADIANS">0.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="RADIANS">0.000000000000000</gmd:northBoundLatitude>
+</circe:verticalReferenceSystem>
+<circe:verticalReferenceFrame gml:id="REA009">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">REA009</gml:identifier>
+    <gml:name>IGN 1988 Saint-Martin</gml:name>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesVerticalSystem xlink:href="REA009"/>
+</circe:verticalReferenceFrame>
+<gml:VerticalCRS gml:id="GUAD88SM">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>vertical</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>VERTICAL</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REA009"/>
+</gml:VerticalCRS>
+<circe:verticalReferenceSystem gml:id="REA014">
+    <gml:name>IGN 1987 Martinique</gml:name>
+    <gmd:westBoundLongitude uom="RADIANS">0.000000000000000</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="RADIANS">0.000000000000000</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="RADIANS">0.000000000000000</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="RADIANS">0.000000000000000</gmd:northBoundLatitude>
+</circe:verticalReferenceSystem>
+<circe:verticalReferenceFrame gml:id="REA014">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">REA014</gml:identifier>
+    <gml:name>IGN 1987 Martinique</gml:name>
+    <gml:name codeSpace="OGP"></gml:name>
+    <gml:usesVerticalSystem xlink:href="REA014"/>
+</circe:verticalReferenceFrame>
+<gml:VerticalCRS gml:id="MART87">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/TO_BE_DEFINED</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>vertical</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>VERTICAL</circe:crs_type>
+    <circe:usesReferenceFrame xlink:href="REA014"/>
+</gml:VerticalCRS>
+<circe:frameTransformation gml:id="I14915">
+    <circe:description>frame transformation</circe:description>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:source_frame>REGI140001</circe:source_frame>
+    <circe:source_epoch>0.000000</circe:source_epoch>
+    <circe:target_frame>REG9150001</circe:target_frame>
+    <circe:target_epoch>0.000000</circe:target_epoch>
+    <circe:values_number>14</circe:values_number>
+    <circe:precision_code>YES</circe:precision_code>
+	<circe:init_values>0.0111,-0.0158,-0.0021,0.00089,-0.000206,0.001429,-0.000765,0,0,0,0,-0.000206,0.001429,-0.000765</circe:init_values>
+	<circe:values_unit>SECONDS</circe:values_unit>
+    <circe:epoch>2010.000000</circe:epoch>
+    <circe:precision_code_init>1</circe:precision_code_init>
+    <circe:layout>CONSTANT</circe:layout>
+</circe:frameTransformation>
+<circe:frameTransformation gml:id="I14643">
+    <circe:description>frame transformation</circe:description>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:source_frame>REGI140001</circe:source_frame>
+    <circe:source_epoch>0.000000</circe:source_epoch>
+    <circe:target_frame>REG6430001</circe:target_frame>
+    <circe:target_epoch>0.000000</circe:target_epoch>
+    <circe:values_number>14</circe:values_number>
+    <circe:precision_code>YES</circe:precision_code>
+	<circe:init_values>-1.2219,-2.4363,1.753,-0.23781,-0.038206,0.162439,0.048485,0,0,0,0,-0.000206,0.001429,-0.000765</circe:init_values>
+	<circe:values_unit>SECONDS</circe:values_unit>
+    <circe:epoch>2010.000000</circe:epoch>
+    <circe:precision_code_init>1</circe:precision_code_init>
+    <circe:layout>CONSTANT</circe:layout>
+</circe:frameTransformation>
+<circe:frameTransformation gml:id="I14644">
+    <circe:description>frame transformation</circe:description>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:source_frame>REGI140001</circe:source_frame>
+    <circe:source_epoch>0.000000</circe:source_epoch>
+    <circe:target_frame>REG6440001</circe:target_frame>
+    <circe:target_epoch>0.000000</circe:target_epoch>
+    <circe:values_number>14</circe:values_number>
+    <circe:precision_code>YES</circe:precision_code>
+	<circe:init_values>-0.7585,0.8534,12.061,-0.28201,0.324904,0.211839,0.023135,0,0,0,0,-0.000206,0.001429,-0.000765</circe:init_values>
+	<circe:values_unit>SECONDS</circe:values_unit>
+    <circe:epoch>2010.000000</circe:epoch>
+    <circe:precision_code_init>1</circe:precision_code_init>
+    <circe:layout>CONSTANT</circe:layout>
+</circe:frameTransformation>
+<circe:frameTransformation gml:id="I14645">
+    <circe:description>frame transformation</circe:description>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:source_frame>REGI140001</circe:source_frame>
+    <circe:source_epoch>0.000000</circe:source_epoch>
+    <circe:target_frame>REG6450001</circe:target_frame>
+    <circe:target_epoch>0.000000</circe:target_epoch>
+    <circe:values_number>14</circe:values_number>
+    <circe:precision_code>YES</circe:precision_code>
+	<circe:init_values>-14.6531,-5.2651,-0.2024,0.40759,0.068174,-0.089981,0.580545,0,0,0,0,-0.000206,0.001429,-0.000765</circe:init_values>
+	<circe:values_unit>SECONDS</circe:values_unit>
+    <circe:epoch>2010.000000</circe:epoch>
+    <circe:precision_code_init>1</circe:precision_code_init>
+    <circe:layout>CONSTANT</circe:layout>
+</circe:frameTransformation>
+<circe:frameTransformation gml:id="10468">
+    <circe:description>frame transformation</circe:description>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:source_frame>REG6430001</circe:source_frame>
+    <circe:source_epoch>0.000000</circe:source_epoch>
+    <circe:target_frame>REG9150001</circe:target_frame>
+    <circe:target_epoch>0.000000</circe:target_epoch>
+    <circe:values_number>7</circe:values_number>
+    <circe:precision_code>YES</circe:precision_code>
+	<circe:init_values>1.2239,2.4156,-1.7598,0.2387,0.038,-0.16101,-0.04925,0,0,0,0,0,0,0</circe:init_values>
+	<circe:values_unit>SECONDS</circe:values_unit>
+    <circe:epoch>0.000000</circe:epoch>
+    <circe:precision_code_init>2</circe:precision_code_init>
+    <circe:layout>CONSTANT</circe:layout>
+</circe:frameTransformation>
+<circe:frameTransformation gml:id="10469">
+    <circe:description>frame transformation</circe:description>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:source_frame>REG6440001</circe:source_frame>
+    <circe:source_epoch>0.000000</circe:source_epoch>
+    <circe:target_frame>REG9150001</circe:target_frame>
+    <circe:target_epoch>0.000000</circe:target_epoch>
+    <circe:values_number>7</circe:values_number>
+    <circe:precision_code>YES</circe:precision_code>
+	<circe:init_values>0.7696,-0.8692,-12.0631,0.2829,-0.32511,-0.21041,-0.0239,0,0,0,0,0,0,0</circe:init_values>
+	<circe:values_unit>SECONDS</circe:values_unit>
+    <circe:epoch>0.000000</circe:epoch>
+    <circe:precision_code_init>2</circe:precision_code_init>
+    <circe:layout>CONSTANT</circe:layout>
+</circe:frameTransformation>
+<circe:frameTransformation gml:id="10470">
+    <circe:description>frame transformation</circe:description>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:source_frame>REG6450001</circe:source_frame>
+    <circe:source_epoch>0.000000</circe:source_epoch>
+    <circe:target_frame>REG9150001</circe:target_frame>
+    <circe:target_epoch>0.000000</circe:target_epoch>
+    <circe:values_number>7</circe:values_number>
+    <circe:precision_code>YES</circe:precision_code>
+	<circe:init_values>14.6642,5.2493,0.1981,-0.4067,-0.06838,0.09141,-0.58131,0,0,0,0,0,0,0</circe:init_values>
+	<circe:values_unit>SECONDS</circe:values_unit>
+    <circe:epoch>0.000000</circe:epoch>
+    <circe:precision_code_init>2</circe:precision_code_init>
+    <circe:layout>CONSTANT</circe:layout>
+</circe:frameTransformation>
+<circe:frameTransformation gml:id="99997">
+    <circe:description>frame transformation</circe:description>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:source_frame>REG4240001</circe:source_frame>
+    <circe:source_epoch>0.000000</circe:source_epoch>
+    <circe:target_frame>REG9150001</circe:target_frame>
+    <circe:target_epoch>0.000000</circe:target_epoch>
+    <circe:values_number>7</circe:values_number>
+    <circe:precision_code>YES</circe:precision_code>
+	<circe:init_values>127.744,547.069,118.359,14.1012,-3.1116,4.9509,-0.8837,0,0,0,0,0,0,0</circe:init_values>
+	<circe:values_unit>SECONDS</circe:values_unit>
+    <circe:epoch>0.000000</circe:epoch>
+    <circe:precision_code_init>10</circe:precision_code_init>
+    <circe:layout>CONSTANT</circe:layout>
+</circe:frameTransformation>
+<circe:frameTransformation gml:id="99998">
+    <circe:description>frame transformation</circe:description>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:source_frame>REG4250001</circe:source_frame>
+    <circe:source_epoch>0.000000</circe:source_epoch>
+    <circe:target_frame>REG9150001</circe:target_frame>
+    <circe:target_epoch>0.000000</circe:target_epoch>
+    <circe:values_number>7</circe:values_number>
+    <circe:precision_code>YES</circe:precision_code>
+	<circe:init_values>-471.06,-3.212,-305.843,2.1353,0.4752,-0.9978,0.2068,0,0,0,0,0,0,0</circe:init_values>
+	<circe:values_unit>SECONDS</circe:values_unit>
+    <circe:epoch>0.000000</circe:epoch>
+    <circe:precision_code_init>10</circe:precision_code_init>
+    <circe:layout>CONSTANT</circe:layout>
+</circe:frameTransformation>
+<circe:frameTransformation gml:id="99999">
+    <circe:description>frame transformation</circe:description>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:source_frame>REG4260001</circe:source_frame>
+    <circe:source_epoch>0.000000</circe:source_epoch>
+    <circe:target_frame>REG9150001</circe:target_frame>
+    <circe:target_epoch>0.000000</circe:target_epoch>
+    <circe:values_number>7</circe:values_number>
+    <circe:precision_code>YES</circe:precision_code>
+	<circe:init_values>151.613,253.832,-429.084,-0.3971,-0.0506,0.0958,-0.5974,0,0,0,0,0,0,0</circe:init_values>
+	<circe:values_unit>SECONDS</circe:values_unit>
+    <circe:epoch>0.000000</circe:epoch>
+    <circe:precision_code_init>99</circe:precision_code_init>
+    <circe:layout>CONSTANT</circe:layout>
+</circe:frameTransformation>
+<circe:frameTransformation gml:id="PMMCA">
+    <circe:description>plate motion model /CA/</circe:description>
+	<circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>GEOCENTRIC</circe:crs_type>
+    <circe:source_frame>REGI140001</circe:source_frame>
+    <circe:target_frame>REGI140001</circe:target_frame>
+    <circe:values_number>14</circe:values_number>
+    <circe:precision_code>YES</circe:precision_code>
+	<circe:init_values>0,0,0,0,0,0,0,0,0,0,0,0.206,-1.429,0.765</circe:init_values>
+	<circe:values_unit>MASPERY</circe:values_unit>
+	<circe:epoch>0</circe:epoch>
+    <circe:precision_code_init>1</circe:precision_code_init>
+    <circe:layout>CONSTANT</circe:layout>
+    <gmd:westBoundLongitude uom="DEGREES">-180.</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="DEGREES">180.</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="DEGREES">-90.</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="DEGREES">90.</gmd:northBoundLatitude>
+</circe:frameTransformation>
+<circe:frameTransformation gml:id="RAGTBT2016">
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>VERTICAL</circe:crs_type>
+    <circe:data_file_name>RAGTBT2016.tac</circe:data_file_name>
+    <circe:metadata_file_name>RAGTBT2016.xml</circe:metadata_file_name>
+    <circe:file_type></circe:file_type>
+    <circe:values_number>1</circe:values_number>
+    <circe:init_values>0</circe:init_values>
+    <circe:source_frame>REA006</circe:source_frame>
+    <circe:target_frame>REG9150001</circe:target_frame>
+    <circe:node_frame>UNDEFINED</circe:node_frame>
+    <circe:node_frame_info>TARGET</circe:node_frame_info>
+</circe:frameTransformation>
+<circe:frameTransformation gml:id="RALD2016">
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>VERTICAL</circe:crs_type>
+    <circe:data_file_name>RALD2016.tac</circe:data_file_name>
+    <circe:metadata_file_name>RALD2016.xml</circe:metadata_file_name>
+    <circe:file_type></circe:file_type>
+    <circe:values_number>1</circe:values_number>
+    <circe:init_values>0</circe:init_values>
+    <circe:source_frame>REA053</circe:source_frame>
+    <circe:target_frame>REG9150001</circe:target_frame>
+    <circe:node_frame>UNDEFINED</circe:node_frame>
+    <circe:node_frame_info>TARGET</circe:node_frame_info>
+</circe:frameTransformation>
+<circe:frameTransformation gml:id="RALS2016">
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>VERTICAL</circe:crs_type>
+    <circe:data_file_name>RALS2016.tac</circe:data_file_name>
+    <circe:metadata_file_name>RALS2016.xml</circe:metadata_file_name>
+    <circe:file_type></circe:file_type>
+    <circe:values_number>1</circe:values_number>
+    <circe:init_values>0</circe:init_values>
+    <circe:source_frame>REA008</circe:source_frame>
+    <circe:target_frame>REG9150001</circe:target_frame>
+    <circe:node_frame>UNDEFINED</circe:node_frame>
+    <circe:node_frame_info>TARGET</circe:node_frame_info>
+</circe:frameTransformation>
+<circe:frameTransformation gml:id="RAMG2016">
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>VERTICAL</circe:crs_type>
+    <circe:data_file_name>RAMG2016.tac</circe:data_file_name>
+    <circe:metadata_file_name>RAMG2016.xml</circe:metadata_file_name>
+    <circe:file_type></circe:file_type>
+    <circe:values_number>1</circe:values_number>
+    <circe:init_values>0</circe:init_values>
+    <circe:source_frame>REA007</circe:source_frame>
+    <circe:target_frame>REG9150001</circe:target_frame>
+    <circe:node_frame>UNDEFINED</circe:node_frame>
+    <circe:node_frame_info>TARGET</circe:node_frame_info>
+</circe:frameTransformation>
+<circe:frameTransformation gml:id="GG10_SBV2">
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>VERTICAL</circe:crs_type>
+    <circe:data_file_name>gg10_sbv2.tac</circe:data_file_name>
+    <circe:metadata_file_name>gg10_sbv2.xml</circe:metadata_file_name>
+    <circe:file_type></circe:file_type>
+    <circe:values_number>1</circe:values_number>
+    <circe:init_values>0</circe:init_values>
+    <circe:source_frame>REA012</circe:source_frame>
+    <circe:target_frame>REG9150001</circe:target_frame>
+    <circe:node_frame>UNDEFINED</circe:node_frame>
+    <circe:node_frame_info>TARGET</circe:node_frame_info>
+</circe:frameTransformation>
+<circe:frameTransformation gml:id="GG10_SMV2">
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>VERTICAL</circe:crs_type>
+    <circe:data_file_name>gg10_smv2.tac</circe:data_file_name>
+    <circe:metadata_file_name>gg10_smv2.xml</circe:metadata_file_name>
+    <circe:file_type></circe:file_type>
+    <circe:values_number>1</circe:values_number>
+    <circe:init_values>0</circe:init_values>
+    <circe:source_frame>REA009</circe:source_frame>
+    <circe:target_frame>REG9150001</circe:target_frame>
+    <circe:node_frame>UNDEFINED</circe:node_frame>
+    <circe:node_frame_info>TARGET</circe:node_frame_info>
+</circe:frameTransformation>
+<circe:frameTransformation gml:id="RAMART2016">
+    <circe:status>AUTHORITATIVE</circe:status>
+    <circe:reversibility>REVERSE_SAME_PARAMETERS</circe:reversibility>
+    <circe:crs_type>VERTICAL</circe:crs_type>
+    <circe:data_file_name>RAMART2016.tac</circe:data_file_name>
+    <circe:metadata_file_name>RAMART2016.xml</circe:metadata_file_name>
+    <circe:file_type></circe:file_type>
+    <circe:values_number>1</circe:values_number>
+    <circe:init_values>0</circe:init_values>
+    <circe:source_frame>REA014</circe:source_frame>
+    <circe:target_frame>REG9150001</circe:target_frame>
+    <circe:node_frame>UNDEFINED</circe:node_frame>
+    <circe:node_frame_info>TARGET</circe:node_frame_info>
+</circe:frameTransformation>
+<gml:Conversion gml:id="PRC0220">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/coordinateOperation/IGNF/PRC0220</gml:identifier>
+    <gml:name>UTM Nord fuseau 20</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <gml:usesMethod xlink:href="PRCM020from2Dto2D"/>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:ParameterValue uom="METERS" gml:name="X0">500000.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="METERS" gml:name="Y0">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="LAMBDA0">-63.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI0">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI1">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI2">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue gml:name="K0">0.999600000000000</gml:ParameterValue>
+</gml:Conversion>
+<gml:Conversion gml:id="PRC0221">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/coordinateOperation/IGNF/PRC0221</gml:identifier>
+    <gml:name>UTM Nord fuseau 21</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <gml:usesMethod xlink:href="PRCM020from2Dto2D"/>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:ParameterValue uom="METERS" gml:name="X0">500000.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="METERS" gml:name="Y0">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="LAMBDA0">-57.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI0">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI1">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI2">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue gml:name="K0">0.999600000000000</gml:ParameterValue>
+</gml:Conversion>
+<gml:Conversion gml:id="PRC0222">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/coordinateOperation/IGNF/PRC0222</gml:identifier>
+    <gml:name>UTM Nord fuseau 22</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <gml:usesMethod xlink:href="PRCM020from2Dto2D"/>
+    <gml:usesPrimeMeridian xlink:href="LGO01"/>
+    <gml:ParameterValue uom="METERS" gml:name="X0">500000.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="METERS" gml:name="Y0">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="LAMBDA0">-51.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI0">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI1">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue uom="DMS" gml:name="PHI2">0.000000000000000</gml:ParameterValue>
+    <gml:ParameterValue gml:name="K0">0.999600000000000</gml:ParameterValue>
+</gml:Conversion>
+<gml:ProjectedCRS gml:id="MARTFDUTM20">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ4240220</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>MARTFD - UTM Nord fuseau 20</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="RADIANS">-1.073377489976513</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="RADIANS">-1.055924197456569</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="RADIANS">0.244346095279206</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="RADIANS">0.270526034059121</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0220"/>
+    <gml:baseGeographicCRS xlink:href="REG4240001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG4240001"/>
+</gml:ProjectedCRS>
+<gml:ProjectedCRS gml:id="WGS84MARTUTM20">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ6440220</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>WGS 84 - UTM Nord fuseau 20</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="RADIANS">-1.073377489976513</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="RADIANS">-1.055924197456569</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="RADIANS">0.244346095279206</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="RADIANS">0.270526034059121</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0220"/>
+    <gml:baseGeographicCRS xlink:href="REG6440001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG6440001"/>
+</gml:ProjectedCRS>
+<gml:ProjectedCRS gml:id="GUADANNUTM20">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ4250220</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>GUADANN - UTM Nord fuseau 20</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="RADIANS">-1.079067263338014</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="RADIANS">-1.060706399607034</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="RADIANS">0.276180900835583</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="RADIANS">0.289742109123579</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0220"/>
+    <gml:baseGeographicCRS xlink:href="REG4250001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG4250001"/>
+</gml:ProjectedCRS>
+<gml:ProjectedCRS gml:id="WGS84GUADUTM20">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ6430220</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>WGS 84 - UTM Nord fuseau 20</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="RADIANS">-1.079067263338014</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="RADIANS">-1.060706399607034</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="RADIANS">0.276180900835583</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="RADIANS">0.289742109123579</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0220"/>
+    <gml:baseGeographicCRS xlink:href="REG6430001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG6430001"/>
+</gml:ProjectedCRS>
+<gml:ProjectedCRS gml:id="GUADFMUTM20">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ4260220</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>GUADFM - UTM Nord fuseau 20</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="RADIANS">-1.102629208239938</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="RADIANS">-1.086484912658990</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="RADIANS">0.311087485875469</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="RADIANS">0.317231044842489</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0220"/>
+    <gml:baseGeographicCRS xlink:href="REG4260001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG4260001"/>
+</gml:ProjectedCRS>
+<gml:ProjectedCRS gml:id="WGS84SMSBUTM20">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ6450220</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>WGS 84 - UTM Nord fuseau 20</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="RADIANS">-1.102629208239938</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="RADIANS">-1.086484912658990</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="RADIANS">0.311087485875469</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="RADIANS">0.317231044842489</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0220"/>
+    <gml:baseGeographicCRS xlink:href="REG6450001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG6450001"/>
+</gml:ProjectedCRS>
+<gml:ProjectedCRS gml:id="RGAF09UTM20">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJ9150220</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>RGAF09 - UTM Nord fuseau 20</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="RADIANS">-1.102629208239938</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="RADIANS">-1.055924197456569</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="RADIANS">0.244346095279206</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="RADIANS">0.317231044842489</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0220"/>
+    <gml:baseGeographicCRS xlink:href="REG9150001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REG9150001"/>
+</gml:ProjectedCRS>
+<gml:ProjectedCRS gml:id="I14UTM20">
+    <gml:identifier codeSpace="http://registre.ign.fr/ign">http://registre.ign.fr/ign/IGNF/crs/IGNF/PROJI140220</gml:identifier>
+    <circe:status>AUTHORITATIVE</circe:status>
+    <gml:name>ITRF2014 - UTM Nord fuseau 20</gml:name>
+    <gml:name codeSpace="OGP">TO_BE_DEFINED</gml:name>
+    <circe:crs_type>PROJECTED</circe:crs_type>
+    <gmd:westBoundLongitude uom="RADIANS">-1.102629208239938</gmd:westBoundLongitude>
+    <gmd:eastBoundLongitude uom="RADIANS">-1.055924197456569</gmd:eastBoundLongitude>
+    <gmd:southBoundLatitude uom="RADIANS">0.244346095279206</gmd:southBoundLatitude>
+    <gmd:northBoundLatitude uom="RADIANS">0.317231044842489</gmd:northBoundLatitude>
+    <gml:definedByConversion xlink:href="PRC0220"/>
+    <gml:baseGeographicCRS xlink:href="REGI140001(TO_BE_DEFINED)"/>
+    <circe:usesReferenceFrame xlink:href="REGI140001"/>
+</gml:ProjectedCRS>
+</CT_CrsCatalogue>
+</CIRCE>

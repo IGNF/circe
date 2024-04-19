@@ -1,0 +1,66 @@
+﻿CIRCE V5
+KEYREG I14
+
+*---------ellipsoides--------------------------------------------------------------------
+*---------ELG num a b 1/f e² nom---------------------------------------------------------
+ELG 004 6378206.4000 6356583.8000 294.978698213 .006768657997 Clarke 1866
+* mise à jour de la valeur e2 du GRS 1980 en fonction des paramètres de définition
+ELG 037 6378137.0000 6356752.3141 298.257222101 .006694380023 GRS 1980
+
+*---------meridiens----------------------------------------------------------------------
+*---------LGO num unite valeur nom-------------------------------------------------------
+LGO 01 01   0.          Greenwich
+
+*---------referentiels geodesiques-------------------------------------------------------
+*---------REG num elg lgo dimension short nom--------------------------------------------------
+REG I14 037 01 4D ITRF2014  ITRF2014
+REG 423 004 01 2D STPM50    SAINT PIERRE ET MIQUELON 1950
+REG 706 037 01 3D RGSPM06   RGSPM06
+
+*---------referentiels altimetriques-----------------------------------------------------
+*---------REA num short Nom--------------------------------------------------------------------
+REA 018 DANGER1950 DANGER 1950
+REA 999 CGVD2013 NRCAN_CGVD2013
+
+*---------parametres de transformation standard------------------------------------------
+*TSG num  reg1 reg2 prec Tx(m)    Ty(m)    Tz(m)     Sc(1e-6)  Rx(s)     Ry(s)    Rz(s)      dTx(m/y) dTy(m/y) dTz(m/y) dSc(1e-6/y) dRx(s/y)  dRy(s/y)  dRz(s/y)  Epoch 
+TSG I14706 I14 706 1    0.0197 -0.0193  0.0122  0.00168 -0.000096  0.002776   0.000252 0 0 0 0 -0.000024 0.000694  0.000063 2010
+TSG 10797  423 706 3  -95.593 573.763 173.442 42.6265 -.9602 1.2510 -1.3918 0 0 0 0 0 0 0 0 0
+
+*---------projections--------------------------------------------------------------------
+*---------PRC num mode  X0 Y0  Lgo  unité_ang  l0  j0  delta  j1  j2  c  type nom -----------
+PRC 0221 0  500000.  0. 01 02 -57.  0. 0.9996   0   0   0 2 UTM Nord fuseau 21
+
+*---------associations referentiels geodesiques/projections et zones d'application-------
+*---------PROJ reg prc unite lonMin latMin lonMax latMax short nom-----------------------------
+PROJ 423 221 02 -56.495  46.696 -56.102 47.199 STPM50UTM21N  STPM50 - UTM Nord fuseau 21
+PROJ 706 221 02 -56.491  46.699 -56.099 47.201 RGSPM06UTM21N RGSPM06 - UTM Nord fuseau 21
+PROJ I14 221 02 -56.491  46.699 -56.099 47.201 I14UTM21      ITRF2014 - UTM Nord fuseau 21
+
+*---------associations grille geoide/referentiel geodesique/referentiel altimetrique-----
+*---------GR1D "nomfichier" reg [rea]...[rea]--------------------------------------------
+GR1D RASPM2018.tac 706 018
+GR1D CGVD2013RGSPM06.tac 706 999
+
+*---------Modèle de mouvement de plaque tectonique pour systèmes 4D
+*PMM reg num dTx(m/y) dTy(m/y) dTz(m/y) dRx(mas/y) dRy(mas/y) dRz(mas/y) name
+PMM  I14 NA  0        0        0         0.024     -0.694    -0.063      N.America
+
+
+*---------zones d'application des referentiels geodesiques-------------------------------
+*---------ZNE reg unite lonMin latMin lonMax latMax--------------------------------------
+ZNE 423 02 -56.49 46.51 -56.03 47.26
+ZNE 706 02 -56.49 46.51 -56.03 47.26
+ZNE I14 02 -56.49 46.51 -56.03 47.26
+
+*--------------------------------------------------------------------------------------------------------
+*---------01 : radians
+*---------02 : degrés décimaux
+*---------03 : grades
+*---------04 : heures décimales
+*---------05 : secondes de degré
+*---------06 : secondes d'heure
+
+*---------10 : degrés, minutes, secondes
+*---------11 : heures, minutes, secondes
+*---------12 : degrés, minutes, décimales

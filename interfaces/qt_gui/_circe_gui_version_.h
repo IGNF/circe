@@ -1,0 +1,10 @@
+#ifndef CIRCE_GUI_VERSION_H
+#define CIRCE_GUI_VERSION_H
+
+#define CG_VERSION_MAJOR 1
+#define CG_VERSION_MINOR 3
+#define CG_VERSION_REV 0
+#define CG_VERSION "1.3.0"
+#define CG_VERSION_NUM 10300
+
+#endif

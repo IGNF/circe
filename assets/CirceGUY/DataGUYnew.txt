@@ -1,0 +1,91 @@
+CIRCE V5
+KEYREG I14
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des ellipsoides utilises------------------------------------------------------------
+*---------ELG num a b 1/f e² nom-------------------------------------------------------------------------
+*
+ELG 001 6378388.0000 6356911.9461 297.000000 .006722670022 International (Hayford 1909)
+* mise à jour de la valeur e2 du GRS 1980 en fonction des paramètres de définition
+ELG 037 6378137.0000 6356752.3141 298.257222101 .006694380023 GRS 1980
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des meridiens utilises--------------------------------------------------------------
+*---------LGO num unite valeur nom-----------------------------------------------------------------------
+*
+LGO 01 01   0.          Greenwich
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des referentiels geodesiques utilises-----------------------------------------------
+*---------REG num elg lgo dimension short nom------------------------------------------------------------------
+*
+REG I14 037 01  4D      ITRF2014    ITRF2014
+REG 407 001 01  2D      CSG67       Guyane : CSG1967 (IGN 1995) 
+REG 486 037 01  3D      RGFG95      Guyane : RGFG95
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des referentiels altimetriques utilises---------------------------------------------
+*---------REA num short Nom------------------------------------------------------------------------------------
+*
+
+REA 016 GUYA77     NGG 1977 Guyane
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des parametres de transformation standard utilises----------------------------------
+*TSG num  reg1 reg2 prec Tx(m)    Ty(m)    Tz(m)     Sc(1e-6)  Rx(s)     Ry(s)    Rz(s)      dTx(m/y) dTy(m/y) dTz(m/y) dSc(1e-6/y) dRx(s/y)  dRy(s/y)  dRz(s/y)  Epoch 
+*
+TSG I14486 I14 486 1   -0.0053  0.0072 -0.0629  0.00249  0.002890  0.003985   0.001450 0 0 0 0  0.000270 0.000301  0.000140 2010
+
+TSG 10466 407 486 10 -193.066     236.993    105.447    1.5649     0.4814   -0.8074    0.1276 0 0 0 0 0 0 0 0 0
+
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des projections cartographiques utilisees-------------------------------------------
+*---------PRC num mode X0  Y0   Lgo   unité_ang  l0  j0  delta  j1  j2  c  type nom-----------------
+*
+PRC 0222 0   500000.  0.   01  10  -51.  0.  0.9996 0 0 0 2 UTM Nord fuseau 22
+
+
+*--------------------------------------------------------------------------------------------------------
+*---------associations referentiels geodesiques/projections cartographiques et zones d'application-------
+*---------PROJ reg prc unite lonMin latMin lonMax latMax short nom-------------------------------------------------
+*
+* Guyane
+PROJ 407 0222 02 -54.951 2.049 -51.049 5.951 CSG67UTM22         CSG67 - UTM Nord fuseau 22
+PROJ 486 0222 02 -54.951 2.049 -51.049 5.951 RGFG95UTM22        RGFG95 - UTM Nord fuseau 22
+PROJ I14 0222 02 -54.951 2.049 -51.049 5.951 I14UTM22           ITRF2014 - UTM Nord fuseau 22
+
+
+*--------------------------------------------------------------------------------------------------------
+*---------associations grille geoide/referentiel geodesique/referentiel altimetrique---------------------
+*---------GR1D "nomfichier" reg [rea]...[rea]------------------------------------------------------------
+*
+GR1D ggguy15.tac      486  016
+
+
+*---------Modèle de mouvement de plaque tectonique pour systèmes 4D
+*PMM reg num dTx(m/y) dTy(m/y) dTz(m/y) dRx(mas/y) dRy(mas/y) dRz(mas/y) name
+PMM  I14 SA  0        0        0        -0.270     -0.301    -0.140      S.America
+
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des zones d'application des referentiels geodesiques--------------------------------
+*---------ZNE reg unite lonMin latMin lonMax latMax------------------------------------------------------
+*
+ZNE 407 02 -54.951 2.049 -51.049 5.951
+ZNE 486 02 -54.951 2.049 -51.049 5.951
+
+* ITRF2014 
+ZNE I14 02 -54.951 2.049 -51.049 5.951
+
+*--------------------------------------------------------------------------------------------------------
+*---------01 : radians
+*---------02 : degrés décimaux
+*---------03 : grades
+*---------04 : heures décimales
+*---------05 : secondes de degré
+*---------06 : secondes d'heure
+
+*---------10 : degrés, minutes, secondes
+*---------11 : heures, minutes, secondes
+*---------12 : degrés, minutes, décimales

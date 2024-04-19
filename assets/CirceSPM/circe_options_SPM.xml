@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CIRCE_OPTIONS>
+	<appTitle>Circé Saint-Pierre-et-Miquelon</appTitle>
+	<appCopyright>Copyright @ IGN 2023</appCopyright>
+	<appVersion>Version 5.4.3 - Décembre 2023</appVersion>
+	<appDescription>La transformation entre ITRF2014 et RGSPM06 est effectuée par une transformation à 14 paramètres (translations, rotations et facteur d'échelle, avec leurs variations annuelles). Les changements d'époque dans ITRF2014 utilisent le modèle de plaques ITRF2014. La transformation standard est effectuée entre les systèmes SPM 1950 et RGSPM06 avec des paramètres standard (translation, rotation et facteur d'échelle) uniques pour tout le territoire. Pour la composante verticale est utilisée une grille de conversion réalisée à partir du géoïde canadien CGG 2013 et de points GPS nivelés.</appDescription>
+	<appHelp>CirceSPM542.chm</appHelp>
+	<appStyle></appStyle>
+	<appUserManual>CirceV5ManuelUtilisateur.pdf</appUserManual>
+	<dataMode>2</dataMode>
+	<logoFilename>logocouleur_petit.png</logoFilename>
+	<imageFilename>circe12cinq.png</imageFilename>
+	<iconFilename>circeV5.png</iconFilename>
+	<sourceDataPathname></sourceDataPathname>
+	<targetDataPathname></targetDataPathname>
+	<metadataFile>DataSPMnew.txt</metadataFile>
+	<boundaryFile>PB2002_plates.txt</boundaryFile>
+	<sourceGeodeticFrameId>REGI140001</sourceGeodeticFrameId>
+	<sourceVerticalFrameId>REA018</sourceVerticalFrameId>
+	<targetGeodeticFrameId>REGI140001</targetGeodeticFrameId>
+	<targetVerticalFrameId>REA018</targetVerticalFrameId>
+	<sourceGeodeticCRSid>ITRF2014</sourceGeodeticCRSid>
+	<sourceVerticalCRSid>DANGER1950</sourceVerticalCRSid>
+	<targetGeodeticCRSid>ITRF2014</targetGeodeticCRSid>
+	<targetVerticalCRSid>DANGER1950</targetVerticalCRSid>
+	<geodeticTransfoId></geodeticTransfoId>
+	<verticalTransfoId></verticalTransfoId>
+	<sourceGeodeticCRStype>1</sourceGeodeticCRStype>
+	<targetGeodeticCRStype>1</targetGeodeticCRStype>
+	<sourceDataFormat>XYZ</sourceDataFormat>
+	<sourceEpoch>0.</sourceEpoch>
+	<targetDataFormat>XYZ</targetDataFormat>
+	<targetEpoch>0.</targetEpoch>
+	<sourceDataUnit>DEGREES</sourceDataUnit>
+	<targetDataUnit>RADIANS</targetDataUnit>
+	<sourceVerticalFrameAuthoritative>1</sourceVerticalFrameAuthoritative>
+	<targetVerticalFrameAuthoritative>1</targetVerticalFrameAuthoritative>
+	<useSourceGeodeticCRS>1</useSourceGeodeticCRS>
+	<useTargetGeodeticCRS>1</useTargetGeodeticCRS>
+	<useSourceVerticalCRS>0</useSourceVerticalCRS>
+	<useTargetVerticalCRS>0</useTargetVerticalCRS>
+	<printCS>0</printCS>
+	<displayBoundingBox>0</displayBoundingBox>
+	<noPrintSppm>0</noPrintSppm>
+	<noUseVerticalFrameAuthoritative>0</noUseVerticalFrameAuthoritative>
+	<scrollArea>0</scrollArea>
+	<plainDMS>0</plainDMS>
+	<displayPrecision>0.001</displayPrecision>
+	<separator>Espace</separator>
+	<id></id>
+	<X>0.</X>
+	<Y>0.</Y>
+	<Z>0.</Z>
+	<L>-56.3</L>
+	<P>47.</P>
+	<H>0.</H>
+	<E>0.</E>
+	<N>0.</N>
+	<V>0.</V>
+</CIRCE_OPTIONS>

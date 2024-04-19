@@ -1,0 +1,84 @@
+CIRCE V5
+KEYREG I14
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des ellipsoides utilises------------------------------------------------------------
+*---------ELG num a b 1/f e² nom-------------------------------------------------------------------------
+ELG 001 6378388.0000 6356911.9461 297.000000 .006722670022 International (Hayford 1909)
+ELG 037 6378137.0000 6356752.3141 298.257222101 .0066943800229 GRS 1980
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des meridiens utilises--------------------------------------------------------------
+*---------LGO num unite valeur nom-----------------------------------------------------------------------
+LGO 01 01   0.          Greenwich
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des referentiels geodesiques utilises-----------------------------------------------
+*---------REG num elg lgo dimension short nom------------------------------------------------------------------
+
+REG I14 037 01 4D ITRF2014  ITRF2014
+REG 317 001 01 2D REUN47    Piton des Neiges
+REG 700 037 01 3D RGR92     RGR92
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des referentiels altimetriques utilises---------------------------------------------
+*---------REA num short Nom------------------------------------------------------------------------------------
+
+REA 033 REUN89 IGN89 (via RAR07)
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des parametres de transformation standard utilises----------------------------------
+*TSG num  reg1 reg2 prec Tx(m)    Ty(m)    Tz(m)     Sc(1e-6)  Rx(s)     Ry(s)    Rz(s)      dTx(m/y) dTy(m/y) dTz(m/y) dSc(1e-6/y) dRx(s/y)  dRy(s/y)  dRz(s/y)  Epoch 
+TSG I14700 I14 700 1   -0.0257  0.0496 -0.0336  0.00245  0.002057  0.013498  -0.015108 0 0 0 0  0.000121 0.000794 -0.000884 2010
+* Précision de la transformation estimée à meilleure que 10 centimetres
+TSG 10355 700 317 2 -789.990  627.333  89.685  32.2083 -0.6072 -76.8019  10.5680 0 0 0 0 0 0 0 0 0
+TSG 10602 317 700 2  789.524 -626.486 -89.904 -32.3241  0.6006  76.7946 -10.5788 0 0 0 0 0 0 0 0 0
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des projections cartographiques utilisees-------------------------------------------
+*---------PRC num mode X0  Y0   Lgo   unité_ang  l0  j0  delta  j1  j2  c  type nom-----------------
+
+PRC 0340 0 500000.  10000000.  01 10  57.     0.   0.9996 0 0 0 3 UTM Sud 40
+PRC 0508 3 160000.     50000.  01 10  55.32 -21.07 1.     0 0 1 5 Gauss-Laborde Réunion
+
+*--------------------------------------------------------------------------------------------------------
+*---------associations referentiels geodesiques/projections cartographiques et zones d'application-------
+*---------PROJ reg prc unite lonMin latMin lonMax latMax short name -------------------------------------------------
+* Les limites débordent de 0,001 ° sur celles de la grille RAR07
+
+PROJ 317 508 02 55.139 -21.501 55.941 -20.749 REUN47GAUSSL Gauss-Laborde Réunion
+PROJ 700 340 02 55.139 -21.501 55.941 -20.749 RGR92UTM40S  RGR92 - UTM Sud 40 
+PROJ I14 340 02 55.139 -21.501 55.941 -20.749 I14UTM40S    ITRF2014 - UTM Sud 40 
+
+*--------------------------------------------------------------------------------------------------------
+*---------associations grille geoide/referentiel geodesique/referentiel altimetrique---------------------
+*---------GR1D "nomfichier" reg [rea]...[rea]------------------------------------------------------------
+
+GR1D RAR07.tac 700 033
+
+*---------Plate Motion Models
+*PMM reg num dTx(m/y) dTy(m/y) dTz(m/y) dRx(mas/y) dRy(mas/y) dRz(mas/y) name
+PMM  I14 SO  0        0        0        -0.121     -0.794     0.884      Somalia
+
+
+*--------------------------------------------------------------------------------------------------------
+*---------definition des zones d'application des referentiels geodesiques--------------------------------
+*---------ZNE reg unite lonMin latMin lonMax latMax------------------------------------------------------
+*---------Toutes les longitudes sont rapportées au Méridien de Greenwich---------------------------------
+* Les limites débordent de 0,001 ° sur celles de la grille RAR07
+
+ZNE 317 02 55.139  -21.501  55.941  -20.749
+ZNE 700 02 55.139  -21.501  55.941  -20.749
+ZNE I14 02 55.139  -21.501  55.941  -20.749
+
+*--------------------------------------------------------------------------------------------------------
+*---------01 : radians
+*---------02 : degrés décimaux
+*---------03 : grades
+*---------04 : heures décimales
+*---------05 : secondes de degré
+*---------06 : secondes d'heure
+
+*---------10 : degrés, minutes, secondes
+*---------11 : heures, minutes, secondes
+*---------12 : degrés, minutes, décimales

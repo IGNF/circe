@@ -1,0 +1,10 @@
+#ifndef CIRCELIB_VERSION_H
+#define CIRCELIB_VERSION_H
+
+#define CL_VERSION_MAJOR 1
+#define CL_VERSION_MINOR 3
+#define CL_VERSION_REV 0
+#define CL_VERSION "1.3.0"
+#define CL_VERSION_NUM 10300
+
+#endif

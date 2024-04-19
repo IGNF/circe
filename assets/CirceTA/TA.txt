@@ -1,0 +1,28 @@
+﻿TEST TERRE ADELIE // ANCIENNE TRIANGULATION Pointe Géologie Perroud 1950 => RGTAAF07 // Projection Sécante + modèle EGM2008 non adapté utilisé pour PETRELS52 // Sources : CR/G 235 et RT/G 83 et fichier "Coordonnees_ptg_terre_adelie.xls" (renommé pour enlever l'accent à Coordonnées) et fichier pgp50geodms.txt // 1 = MOR_EXC, 2 = P2, 3 = P3
+data\DataTA.txt
+5 3
+--sourceCRS=PGP50G.PETRELS52 --sourceFormat=ILPV.METERS.DMS
+3
+1     139.545836809   -66.411639664     31.530 
+2     140.003557523   -66.395432903     44.760 
+3     140.003191292   -66.394585096     41.590 
+--sourceCRS=PGP50STPSTA.PETRELS52 --sourceFormat=IENV.METERS.
+3
+1     296294.120   234824.900     31.530 
+2     300437.520   237372.840     44.760 
+3     300392.520   237635.800     41.590 
+--sourceCRS=RGTAAF07.UNDEFINED --sourceFormat=IXYZ.METERS.
+3
+1   -1936443.571  1630127.320 -5834717.958 
+2   -1940898.421  1628462.602 -5833723.658 
+3   -1941053.304  1628651.242 -5833616.704 
+--sourceCRS=RGTAAF07G.UNDEFINED --sourceFormat=ILPH.METERS.DMS
+3
+1     139.543176310   -66.411649326    -10.176 
+2     140.000901479   -66.395443707      2.974 
+3     140.000535478   -66.394595838     -0.201 
+--sourceCRS=RGTAAFUTM53S.PETRELS52 --sourceFormat=IENV.METERS.
+3
+1     716594.865  2594881.801     31.530 
+2     720924.943  2597087.398     44.760 
+3     720901.163  2597352.852     41.590 

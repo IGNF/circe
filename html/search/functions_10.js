@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['scaleconvgausslab_825',['ScaleConvGaussLab',['../conversioncore_8cpp.html#a605e21545d066a4604559f025b1a7ecd',1,'ScaleConvGaussLab(double a, double e2, double lambda, double phi, double n1, double n2, double c, double lambdac, double *conv, double *scfact):&#160;conversioncore.cpp'],['../conversioncore_8h.html#a605e21545d066a4604559f025b1a7ecd',1,'ScaleConvGaussLab(double a, double e2, double lambda, double phi, double n1, double n2, double c, double lambdac, double *conv, double *scfact):&#160;conversioncore.cpp']]],
+  ['scaleconvlamb_826',['ScaleConvLamb',['../conversioncore_8cpp.html#acb24cfaad3b1903edae1437c8366c55a',1,'ScaleConvLamb(double lambda, double phi, double a, double e2, double n, double c, double lambda0, double *conv, double *scfact):&#160;conversioncore.cpp'],['../conversioncore_8h.html#acb24cfaad3b1903edae1437c8366c55a',1,'ScaleConvLamb(double lambda, double phi, double a, double e2, double n, double c, double lambda0, double *conv, double *scfact):&#160;conversioncore.cpp']]],
+  ['scaleconvmerctr_827',['ScaleConvMercTr',['../conversioncore_8cpp.html#a17ba2fa290a9a65c6bf3d176e5ad0265',1,'ScaleConvMercTr(double a, double lambda, double phi, double n, double lambdac, double xs, double k0, double x, double *conv, double *scfact):&#160;conversioncore.cpp'],['../conversioncore_8h.html#a17ba2fa290a9a65c6bf3d176e5ad0265',1,'ScaleConvMercTr(double a, double lambda, double phi, double n, double lambdac, double xs, double k0, double x, double *conv, double *scfact):&#160;conversioncore.cpp']]],
+  ['scrutinizeformat_828',['scrutinizeFormat',['../namespacecirce.html#af8dd92183154ef70d78dce0ba92515b8',1,'circe']]],
+  ['scrutinizeoptions_829',['scrutinizeOptions',['../namespacecirce.html#a60913b26a2fbbcb54a5e3cc2d53c9816',1,'circe']]],
+  ['selectopam_830',['selectOpam',['../namespacecirce.html#a77a0ab077dd0c801d13b423b50724f5d',1,'circe']]],
+  ['selecttransfo_831',['SelectTransfo',['../classcirce_1_1_transformation.html#ab698ad6846766e09421c8c8c03c76ae7',1,'circe::Transformation']]],
+  ['setaddfromgreenwich_832',['setAddFromGreenwich',['../classcirce_1_1_conversion.html#a15fe7498ae8f26ffbe851ef97380a99d',1,'circe::Conversion']]],
+  ['setboundunit_833',['setBoundUnit',['../classcirce_1_1_circe_bounded_object.html#a38c43f54cd2d8056f2549692fdd6220f',1,'circe::CirceBoundedObject']]],
+  ['setdoublevector_834',['setDoubleVector',['../classcirce_1_1_transformation.html#a212bc1ce0a6c79746533049673a6f2b0',1,'circe::Transformation']]],
+  ['setformatdefaults_835',['setFormatDefaults',['../namespacecirce.html#a7c0a3e67a0581205ec8f6a39b7f10b1a',1,'circe']]],
+  ['setoperationapplication_836',['setOperationApplication',['../classcirce_1_1_operation.html#abf1b5ce9ef64e837903eca642bd9dda7',1,'circe::Operation']]],
+  ['setparameter_837',['setParameter',['../classcirce_1_1_conversion.html#a2c1b6964ace2f0da3fab1e3229b0a36e',1,'circe::Conversion']]],
+  ['setpolygonbound_838',['setPolygonBound',['../classcirce_1_1_circe_bounded_object.html#ae850ab7c43f0dde1db24b510a5b27e10',1,'circe::CirceBoundedObject']]],
+  ['setreversibility_839',['setReversibility',['../classcirce_1_1_operation.html#a846fe4d9d778a4ff0970b1ae9fa808df',1,'circe::Operation']]],
+  ['setstatus_840',['setStatus',['../classcirce_1_1_operation.html#a9f39407629826f68fc5e42d7931ce8ce',1,'circe::Operation']]],
+  ['setsystemdimension_841',['setSystemDimension',['../classcirce_1_1_reference_system.html#ad51d1a47e397567ba8b4c1d22978fe07',1,'circe::ReferenceSystem']]],
+  ['sexadm_5fto_5fdeci_842',['sexadm_to_deci',['../namespacecirce.html#ad5f7c577d40579cb0bc5442c1b1c6b9b',1,'circe']]],
+  ['sexadms_5fto_5fdeci_843',['sexadms_to_deci',['../namespacecirce.html#ae7ff1b5c7baee47f1bfe61dcd303540c',1,'circe']]],
+  ['sphercart_844',['SpherCart',['../conversioncore_8cpp.html#a92f30f717b80b56317816e5b351854c4',1,'SpherCart(double lambda, double phi, double *x, double *y, double *z):&#160;conversioncore.cpp'],['../conversioncore_8h.html#a92f30f717b80b56317816e5b351854c4',1,'SpherCart(double lambda, double phi, double *x, double *y, double *z):&#160;conversioncore.cpp']]],
+  ['splineinterpolation_845',['SplineInterpolation',['../classcirce_1_1_transformation.html#ada6c467fc332f87ec6356fcf0a7d2564',1,'circe::Transformation']]],
+  ['sterpolsudgeo_846',['SterPolSudGeo',['../conversioncore_8cpp.html#ac5fab8cf2c95cbad7649833e3703099b',1,'SterPolSudGeo(double n1, double n2, double xs, double ys, double e2, double c, double lambdac, double phic, double *l, double *p, double x, double y):&#160;conversioncore.cpp'],['../conversioncore_8h.html#ac5fab8cf2c95cbad7649833e3703099b',1,'SterPolSudGeo(double n1, double n2, double xs, double ys, double e2, double c, double lambdac, double phic, double *l, double *p, double x, double y):&#160;conversioncore.cpp']]],
+  ['swapgeodeticoptions_847',['swapGeodeticOptions',['../namespacecirce.html#af24a5c4b88ce1c10e612a43c56217e72',1,'circe']]]
+];

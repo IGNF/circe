@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CIRCE_OPTIONS>
+	<appTitle>Circé Kerguelen</appTitle>
+	<appCopyright>Copyright @ IGN 2022</appCopyright>
+	<appVersion>Version 5.4.3 - Décembre 2023</appVersion>
+	<appDescription>La transformation standard est effectuée entre les systèmes "Kerguelen K0" et RGTAAF07 avec des paramètres standard (3 translations) uniques pour tout le territoire. Pour la composante verticale est utilisée une grille de conversion géométrique réalisée à partir du géoïde mondial EGM2008 et de points GPS nivelés dans la zone de Port aux Français.</appDescription>
+	<appHelp>CirceKER542.chm</appHelp>
+	<appStyle></appStyle>
+	<appUserManual>CirceV5ManuelUtilisateur.pdf</appUserManual>
+	<dataMode>2</dataMode>
+	<logoFilename>logocouleur_petit.png</logoFilename>
+	<imageFilename>circe12cinq.png</imageFilename>
+	<iconFilename>circeV5.png</iconFilename>
+	<sourceDataPathname></sourceDataPathname>
+	<targetDataPathname></targetDataPathname>
+	<metadataFile>DataKERnew.txt</metadataFile>
+	<boundaryFile></boundaryFile>
+	<sourceGeodeticFrameId>REG0360001</sourceGeodeticFrameId>
+	<sourceVerticalFrameId>REA026</sourceVerticalFrameId>
+	<targetGeodeticFrameId>REG0360001</targetGeodeticFrameId>
+	<targetVerticalFrameId>REA026</targetVerticalFrameId>
+	<sourceGeodeticCRSid>RGTAAF07G</sourceGeodeticCRSid>
+	<sourceVerticalCRSid>KERG62</sourceVerticalCRSid>
+	<targetGeodeticCRSid>RGTAAFUTM42S</targetGeodeticCRSid>
+	<targetVerticalCRSid>KERG62</targetVerticalCRSid>
+	<geodeticTransfoId></geodeticTransfoId>
+	<verticalTransfoId></verticalTransfoId>
+	<sourceGeodeticCRStype>2</sourceGeodeticCRStype>
+	<targetGeodeticCRStype>3</targetGeodeticCRStype>
+	<sourceDataFormat>LPH</sourceDataFormat>
+	<sourceEpoch>0.</sourceEpoch>
+	<targetDataFormat>ENV</targetDataFormat>
+	<targetEpoch>0.</targetEpoch>
+	<sourceDataUnit>DMS</sourceDataUnit>
+	<targetDataUnit>DMS</targetDataUnit>
+	<sourceVerticalFrameAuthoritative>1</sourceVerticalFrameAuthoritative>
+	<targetVerticalFrameAuthoritative>1</targetVerticalFrameAuthoritative>
+	<useSourceGeodeticCRS>1</useSourceGeodeticCRS>
+	<useTargetGeodeticCRS>1</useTargetGeodeticCRS>
+	<useSourceVerticalCRS>0</useSourceVerticalCRS>
+	<useTargetVerticalCRS>1</useTargetVerticalCRS>
+	<printCS>0</printCS>
+	<displayBoundingBox>0</displayBoundingBox>
+	<noPrintSppm>0</noPrintSppm>
+	<noUseVerticalFrameAuthoritative>1</noUseVerticalFrameAuthoritative>
+	<scrollArea>0</scrollArea>
+	<plainDMS>0</plainDMS>
+	<displayPrecision>0.001</displayPrecision>
+	<separator>Espace</separator>	
+	<id></id>
+	<X>0.</X>
+	<Y>0.</Y>
+	<Z>0.</Z>
+	<L>70.152145969</L>
+	<P>-49.210692075</P>
+	<H>73.586</H>
+	<E>0.</E>
+	<N>0.</N>
+	<V>0.</V>
+</CIRCE_OPTIONS>

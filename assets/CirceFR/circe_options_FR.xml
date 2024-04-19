@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CIRCE_OPTIONS>
+	<appTitle>Circé France</appTitle>
+	<appCopyright>Copyright @ IGN 2023</appCopyright>
+	<appVersion>Version 5.4.3 - Décembre 2023</appVersion>
+	<appDescription>La transformation entre ITRF2014 et RGF93 est effectuée par une transformation à 14 paramètres (translations, rotations et facteur d'échelle, avec leurs variations annuelles). Les changements d'époque dans ITRF2014 utilisent le modèle de plaques ITRF2014. Une transformation standard est effectuée entre les repères de référence géodésique WGS84, NTF et ED50 avec des paramètres (translation, rotation et facteur d'échelle) uniques pour toute la France (pour la composante verticale est utilisée une grille de conversion extraite du géoïde mondial EGM2008). La transformation entre les repères de référence géodésique NTF et RGF93 est effectuée avec une grille de paramètres tridimensionnels de translation. Deux grilles modélisent les surfaces de conversion altimétrique entre les repères verticaux IGN69 (grille RAF20) ou IGN78 (grille RAC23) d'une part, et le repère de référence géodésique RGF93 d'autre part.</appDescription>
+	<appHelp>CirceFR542.chm</appHelp>
+	<appStyle>Horizontal</appStyle>
+	<appUserManual>CirceV5ManuelUtilisateur.pdf</appUserManual>
+	<dataMode>2</dataMode>
+	<logoFilename>logocouleur_petit.png</logoFilename>
+	<imageFilename>circe12cinqmetropole.png</imageFilename>
+	<iconFilename>circeV5.png</iconFilename>
+	<sourceDataPathname></sourceDataPathname>
+	<targetDataPathname>D:/</targetDataPathname>
+	<metadataFile>DataFRnew.txt</metadataFile>
+	<boundaryFile>PB2002_plates.txt</boundaryFile>
+	<sourceGeodeticFrameId>REGI140001</sourceGeodeticFrameId>
+	<sourceVerticalFrameId>REA003</sourceVerticalFrameId>
+	<targetGeodeticFrameId>REG0240001</targetGeodeticFrameId>
+	<targetVerticalFrameId>REA003</targetVerticalFrameId>
+	<sourceGeodeticCRSid>ITRF2014G</sourceGeodeticCRSid>
+	<sourceVerticalCRSid>IGN69</sourceVerticalCRSid>
+	<targetGeodeticCRSid>RGF93</targetGeodeticCRSid>
+	<targetVerticalCRSid>IGN69</targetVerticalCRSid>
+	<geodeticTransfoId></geodeticTransfoId>
+	<verticalTransfoId></verticalTransfoId>
+	<sourceGeodeticCRStype>2</sourceGeodeticCRStype>
+	<targetGeodeticCRStype>1</targetGeodeticCRStype>
+	<sourceDataFormat>LP</sourceDataFormat>
+	<sourceEpoch>2010.2</sourceEpoch>
+	<targetDataFormat>XYZ</targetDataFormat>
+	<targetEpoch>0.</targetEpoch>
+	<sourceDataUnit>DEGREES</sourceDataUnit>
+	<targetDataUnit>DEGREES</targetDataUnit>
+	<sourceVerticalFrameAuthoritative>0</sourceVerticalFrameAuthoritative>
+	<targetVerticalFrameAuthoritative>0</targetVerticalFrameAuthoritative>
+	<useSourceGeodeticCRS>1</useSourceGeodeticCRS>
+	<useTargetGeodeticCRS>1</useTargetGeodeticCRS>
+	<useSourceVerticalCRS>0</useSourceVerticalCRS>
+	<useTargetVerticalCRS>0</useTargetVerticalCRS>
+	<printCS>1</printCS>
+	<displayBoundingBox>0</displayBoundingBox>
+	<noPrintSppm>0</noPrintSppm>
+	<noUseVerticalFrameAuthoritative>0</noUseVerticalFrameAuthoritative>
+	<scrollArea>0</scrollArea>
+	<plainDMS>0</plainDMS>
+	<displayPrecision>0.001</displayPrecision>
+	<separator>Espace</separator>
+	<id></id>
+	<X>0.</X>
+	<Y>0.</Y>
+	<Z>0.</Z>
+	<L>0.</L>
+	<P>48.</P>
+	<H>0.</H>
+	<E>0.</E>
+	<N>0.</N>
+	<V>0.</V>
+</CIRCE_OPTIONS>

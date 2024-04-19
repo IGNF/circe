@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CIRCE_OPTIONS>
+	<appTitle>Circé Réunion</appTitle>
+	<appCopyright>Copyright @ IGN 2023</appCopyright>
+	<appVersion>Version 5.4.3 - Décembre 2023</appVersion>
+	<appDescription>La transformation entre ITRF2014 et RGR92 est effectuée par une transformation à 14 paramètres (translations, rotations et facteur d'échelle, avec leurs variations annuelles). Les changements d'époque dans ITRF2014 utilisent le modèle de plaques ITRF2014. La transformation planimétrique est effectuée entre RGR92 et le système local Piton des Neiges 1947 avec des paramètres de similitude (translations, rotations et facteur d'échelle) calculés en 1993 et non réversibles. Pour la composante verticale, la surface de conversion altimétrique RAR07 (issue d'un quasi-géoïde gravimétrique adapté à un jeu de points GPS nivelés), qui permet le passage entre altitude et hauteur ellipsoïdale, est utilisée.</appDescription>
+	<appHelp>CirceREU542.chm</appHelp>
+	<appStyle>Horizontal</appStyle>
+	<appUserManual>CirceV5ManuelUtilisateur.pdf</appUserManual>
+	<dataMode>2</dataMode>
+	<logoFilename>logocouleur_petit.png</logoFilename>
+	<imageFilename>circe12cinq.png</imageFilename>
+	<iconFilename>circeV5.png</iconFilename>
+	<sourceDataPathname></sourceDataPathname>
+	<targetDataPathname></targetDataPathname>
+	<metadataFile>DataREUnew.txt</metadataFile>
+	<boundaryFile>PB2002_plates.txt</boundaryFile>
+	<sourceGeodeticFrameId>REGI140001</sourceGeodeticFrameId>
+	<sourceVerticalFrameId>REA033</sourceVerticalFrameId>
+	<targetGeodeticFrameId>REG7000001</targetGeodeticFrameId>
+	<targetVerticalFrameId>REA033</targetVerticalFrameId>
+	<sourceGeodeticCRSid>ITRF2014G</sourceGeodeticCRSid>
+	<sourceVerticalCRSid>REUN89</sourceVerticalCRSid>
+	<targetGeodeticCRSid>RGR92</targetGeodeticCRSid>
+	<targetVerticalCRSid>REUN89</targetVerticalCRSid>
+	<geodeticTransfoId></geodeticTransfoId>
+	<verticalTransfoId></verticalTransfoId>
+	<sourceGeodeticCRStype>2</sourceGeodeticCRStype>
+	<targetGeodeticCRStype>1</targetGeodeticCRStype>
+	<sourceDataFormat>LP</sourceDataFormat>
+	<sourceEpoch>2000.</sourceEpoch>
+	<targetDataFormat>XYZ</targetDataFormat>
+	<targetEpoch>0.</targetEpoch>
+	<sourceDataUnit>DEGREES</sourceDataUnit>
+	<targetDataUnit>DEGREES</targetDataUnit>
+	<sourceVerticalFrameAuthoritative>1</sourceVerticalFrameAuthoritative>
+	<targetVerticalFrameAuthoritative>1</targetVerticalFrameAuthoritative>
+	<useSourceGeodeticCRS>1</useSourceGeodeticCRS>
+	<useTargetGeodeticCRS>1</useTargetGeodeticCRS>
+	<useSourceVerticalCRS>0</useSourceVerticalCRS>
+	<useTargetVerticalCRS>0</useTargetVerticalCRS>
+	<printCS>1</printCS>
+	<displayBoundingBox>0</displayBoundingBox>
+	<noPrintSppm>0</noPrintSppm>
+	<noUseVerticalFrameAuthoritative>1</noUseVerticalFrameAuthoritative>
+	<scrollArea>0</scrollArea>
+	<plainDMS>0</plainDMS>
+	<displayPrecision>0.001</displayPrecision>
+	<separator>Espace</separator>
+	<id></id>
+	<X>0.</X>
+	<Y>0.</Y>
+	<Z>0.</Z>
+	<L>55.5</L>
+	<P>-21.</P>
+	<H>0.</H>
+	<E>0.</E>
+	<N>0.</N>
+	<V>3069.619</V>
+</CIRCE_OPTIONS>
