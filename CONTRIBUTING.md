@@ -20,12 +20,6 @@ as they respect the Circe basics described in [README](https://github.com/IGNF/c
 
 ## WHEN YOU'RE SIGNED IN ...
 
-When you get [there](https://devsgn.ign.fr/users/sign_in) and choose the 
-*Register* tab, you can create an account and log in.
-
-Please send a mail to _circe(AT)ign.fr_ if you face a problem in creating your 
-account or in using this Gitlab project.
-
 When you're signed in, you can **create issues** and **fork the master branch**.
 
 The preferred way of contribution to the source code development is as follows:
