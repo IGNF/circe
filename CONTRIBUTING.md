@@ -15,7 +15,7 @@ Questions regarding Circe source code must be sent to _circe(AT)ign.fr_:
 * Suggesting a new functionality. 
 
 New functionalities will be considered as long 
-as they respect the Circe basics described in [README](https://devsgn.ign.fr/circeV5/circe_public/blob/master/README.md).
+as they respect the Circe basics described in [README](https://github.com/IGNF/circe/blob/main/README.md).
 
 
 ## WHEN YOU'RE SIGNED IN ...

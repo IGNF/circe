@@ -1,3 +1,5 @@
+![](circe12qua.png)
+
 # IGNF / Circé 5
 
 ## PURPOSE OF THE SOFTWARE
@@ -36,7 +38,7 @@ These files are built on a geographical area consistency basis.
 This Git project mainly aims at providing the free library *circelib* (standard C ++) 
 to any developer that needs functions to operate on Coordinate Reference Systems. 
 Contributions are also appreciated; [please read here how to contribute or 
-send questions to Circé team.](https://devsgn.ign.fr/circeV5/circe_public/blob/master/CONTRIBUTING.md)
+send questions to Circé team.](https://github.com/IGNF/circe/blob/main/CONTRIBUTING.md)
 
 For convenience for the developer, it also provides the source code of the 
 graphical and command line interfaces (GUI & CLI) corresponding to the 
@@ -95,5 +97,5 @@ insert it as *process* function argument.
 Please open the following page as a web page to get access to the software 
 documentation:
 
-<a href="https://devsgn.ign.fr/circeV5/circe_public/blob/master/html/index.html" target="_blank">index.html</a>
+<a href="https://github.com/IGNF/circe/blob/main/html/index.html" target="_blank">index.html</a>
 
