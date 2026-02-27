@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CIRCE_OPTIONS>
 	<appTitle>Circé Kerguelen</appTitle>
-	<appCopyright>Copyright @ IGN 2022</appCopyright>
-	<appVersion>Version 5.4.3 - Décembre 2023</appVersion>
+	<appCopyright>Copyright @ IGN 2026</appCopyright>
+	<appVersion>Version 5.5.0 - Janvier 2026</appVersion>
 	<appDescription>La transformation standard est effectuée entre les systèmes "Kerguelen K0" et RGTAAF07 avec des paramètres standard (3 translations) uniques pour tout le territoire. Pour la composante verticale est utilisée une grille de conversion géométrique réalisée à partir du géoïde mondial EGM2008 et de points GPS nivelés dans la zone de Port aux Français.</appDescription>
-	<appHelp>CirceKER542.chm</appHelp>
+	<appHelp>ServicePublic550.chm</appHelp>
 	<appStyle></appStyle>
 	<appUserManual>CirceV5ManuelUtilisateur.pdf</appUserManual>
 	<dataMode>2</dataMode>

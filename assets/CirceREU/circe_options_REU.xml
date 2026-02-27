@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CIRCE_OPTIONS>
 	<appTitle>Circé Réunion</appTitle>
-	<appCopyright>Copyright @ IGN 2023</appCopyright>
-	<appVersion>Version 5.4.3 - Décembre 2023</appVersion>
+	<appCopyright>Copyright @ IGN 2026</appCopyright>
+	<appVersion>Version 5.5.0 - Janvier 2026</appVersion>
 	<appDescription>La transformation entre ITRF2014 et RGR92 est effectuée par une transformation à 14 paramètres (translations, rotations et facteur d'échelle, avec leurs variations annuelles). Les changements d'époque dans ITRF2014 utilisent le modèle de plaques ITRF2014. La transformation planimétrique est effectuée entre RGR92 et le système local Piton des Neiges 1947 avec des paramètres de similitude (translations, rotations et facteur d'échelle) calculés en 1993 et non réversibles. Pour la composante verticale, la surface de conversion altimétrique RAR07 (issue d'un quasi-géoïde gravimétrique adapté à un jeu de points GPS nivelés), qui permet le passage entre altitude et hauteur ellipsoïdale, est utilisée.</appDescription>
-	<appHelp>CirceREU542.chm</appHelp>
+	<appHelp>ServicePublic550.chm</appHelp>
 	<appStyle>Horizontal</appStyle>
 	<appUserManual>CirceV5ManuelUtilisateur.pdf</appUserManual>
 	<dataMode>2</dataMode>

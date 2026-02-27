@@ -19,6 +19,7 @@ LGO 01 01   0.          Greenwich
 *---------definition des referentiels geodesiques utilises-----------------------------------------------
 *---------REG num elg lgo dimension short nom------------------------------------------------------------------
 *
+REG I20 037 01 4D ITRF2020  ITRF2020
 REG I14 037 01  4D      ITRF2014    ITRF2014
 REG 407 001 01  2D      CSG67       Guyane : CSG1967 (IGN 1995) 
 REG 486 037 01  3D      RGFG95      Guyane : RGFG95
@@ -34,6 +35,7 @@ REA 016 GUYA77     NGG 1977 Guyane
 *---------definition des parametres de transformation standard utilises----------------------------------
 *TSG num  reg1 reg2 prec Tx(m)    Ty(m)    Tz(m)     Sc(1e-6)  Rx(s)     Ry(s)    Rz(s)      dTx(m/y) dTy(m/y) dTz(m/y) dSc(1e-6/y) dRx(s/y)  dRy(s/y)  dRz(s/y)  Epoch 
 *
+TSG I20I14 I20 I14  1    -0.0014  -0.0009   0.0014  -0.00042   0         0         0         0        -0.0001   0.0002   0           0         0         0        2015.0
 TSG I14486 I14 486 1   -0.0053  0.0072 -0.0629  0.00249  0.002890  0.003985   0.001450 0 0 0 0  0.000270 0.000301  0.000140 2010
 
 TSG 10466 407 486 10 -193.066     236.993    105.447    1.5649     0.4814   -0.8074    0.1276 0 0 0 0 0 0 0 0 0
@@ -54,7 +56,7 @@ PRC 0222 0   500000.  0.   01  10  -51.  0.  0.9996 0 0 0 2 UTM Nord fuseau 22
 PROJ 407 0222 02 -54.951 2.049 -51.049 5.951 CSG67UTM22         CSG67 - UTM Nord fuseau 22
 PROJ 486 0222 02 -54.951 2.049 -51.049 5.951 RGFG95UTM22        RGFG95 - UTM Nord fuseau 22
 PROJ I14 0222 02 -54.951 2.049 -51.049 5.951 I14UTM22           ITRF2014 - UTM Nord fuseau 22
-
+PROJ I20 0222 02 -54.951 2.049 -51.049 5.951 I20UTM22           ITRF2020 - UTM Nord fuseau 22
 
 *--------------------------------------------------------------------------------------------------------
 *---------associations grille geoide/referentiel geodesique/referentiel altimetrique---------------------
@@ -75,8 +77,9 @@ PMM  I14 SA  0        0        0        -0.270     -0.301    -0.140      S.Ameri
 ZNE 407 02 -54.951 2.049 -51.049 5.951
 ZNE 486 02 -54.951 2.049 -51.049 5.951
 
-* ITRF2014 
+* ITRF2014 et ITRF2020 
 ZNE I14 02 -54.951 2.049 -51.049 5.951
+ZNE I20 02 -54.951 2.049 -51.049 5.951
 
 *--------------------------------------------------------------------------------------------------------
 *---------01 : radians

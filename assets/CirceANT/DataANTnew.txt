@@ -19,6 +19,7 @@ LGO 01 01   0.          Greenwich
 *---------definition des referentiels geodesiques utilises-----------------------------------------------
 *---------REG num elg lgo dimension short nom------------------------------------------------------------------
 *
+REG I20 037 01  4D ITRF2020  ITRF2020
 REG I14 037 01  4D      ITRF2014    ITRF2014
 REG 424 001 01  2D      MARTFD      Martinique : Fort Desaix
 REG 425 001 01  2D      GUADANN     Guadeloupe : Sainte-Anne
@@ -46,6 +47,7 @@ REA 014 MART87     IGN 1987 Martinique
 *---------definition des parametres de transformation standard utilises----------------------------------
 *TSG num  reg1 reg2 prec Tx(m)    Ty(m)    Tz(m)     Sc(1e-6)  Rx(s)     Ry(s)    Rz(s)      dTx(m/y) dTy(m/y) dTz(m/y) dSc(1e-6/y) dRx(s/y)  dRy(s/y)  dRz(s/y)  Epoch 
 *
+TSG I20I14 I20 I14  1    -0.0014  -0.0009   0.0014  -0.00042   0         0         0         0        -0.0001   0.0002   0           0         0         0        2015.0
 TSG I14915 I14 915 1    0.0111 -0.0158 -0.0021  0.00089 -0.000206   0.001429   -0.000765  0 0 0 0 -0.000206 0.001429 -0.000765 2010
 * Mise à jour des paramètres suivants  à partir du document de référence https://geodesie.ign.fr/contenu/fichiers/documentation/rgf93/ITRF2014_vers_references_nationales.pdf
 TSG I14643 I14 643 1   -1.2219 -2.4363  1.7530 -0.23781 -0.038206   0.162439    0.048485  0 0 0 0 -0.000206 0.001429 -0.000765  2010
@@ -91,6 +93,7 @@ PROJ 645 0220 02 -63.176 17.824 -62.251 18.176 WGS84SMSBUTM20   WGS 84 - UTM Nor
 * Antilles
 PROJ 915 0220 02 -63.176 14.0 -60.5 18.176 RGAF09UTM20      RGAF09 - UTM Nord fuseau 20
 PROJ I14 0220 02 -63.176 14.0 -60.5 18.176 I14UTM20         ITRF2014 - UTM Nord fuseau 20
+PROJ I20 0220 02 -63.176 14.0 -60.5 18.176 I20UTM20         ITRF2020 - UTM Nord fuseau 20
 
 *--------------------------------------------------------------------------------------------------------
 *---------associations grille geoide/referentiel geodesique/referentiel altimetrique---------------------
@@ -106,13 +109,16 @@ PROJ I14 0220 02 -63.176 14.0 -60.5 18.176 I14UTM20         ITRF2014 - UTM Nord 
 *GR1D ggg00_sbv2.tac   645  012
 *GR1D ggg00_smv2.tac   645  009
 *GR1D ggm00v2.tac      644  014
+*Grilles pour Saint-Barthélemy et Saint-Martin avant la mission 2019 (calcul en 2024)
+*GR1D gg10_sbv2.tac    915  012
+*GR1D gg10_smv2.tac    915  009
 
 GR1D RAGTBT2016.tac   915  006
 GR1D RALD2016.tac     915  053
 GR1D RALS2016.tac     915  008
 GR1D RAMG2016.tac     915  007
-GR1D gg10_sbv2.tac    915  012
-GR1D gg10_smv2.tac    915  009
+GR1D gg23sb.tac       915  012
+GR1D gg23sm.tac       915  009
 GR1D RAMART2016.tac   915  014
 
 
@@ -134,8 +140,9 @@ ZNE 645 02 -63.176 17.824 -62.251 18.176
 * Extension des limites géographiques de RGAF09 pour accompagner celle de la Martinique
 ZNE 915 02 -63.176 14.0 -60.5 18.176
 
-* ITRF2014 
+* ITRF2014 et ITRF2020 
 ZNE I14 02 -63.176 14.0 -60.5 18.176
+ZNE I20 02 -63.176 14.0 -60.5 18.176
 
 *--------------------------------------------------------------------------------------------------------
 *---------01 : radians

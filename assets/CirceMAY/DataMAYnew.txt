@@ -4,7 +4,6 @@
 *---------ELG num a b 1/f e² nom-------------------------------------------------------------------------
 
 ELG 001 6378388.0000 6356911.9461 297.000000 .006722670022 Hayford 1909 (International)
-* mise à jour de la valeur e2 du GRS 1980 en fonction des paramètres de définition
 ELG 037 6378137.0000 6356752.3141 298.257222101 .006694380023 GRS 1980
 
 *--------------------------------------------------------------------------------------------------------
@@ -18,25 +17,40 @@ LGO 01 01   0.          Greenwich
 *---------REG num elg lgo dimension short nom------------------------------------------------------------------
 * numero du nouveau referentiel a definir en BDG
 
-REG 702 037 01	3D	RGM04 RGM04 (Réseau Géodésique de Mayotte 2004)
-REG 701 001 01	2D	CAD97 CADASTRE 1997
 REG 318 001 01	2D	MAYO50 COMBANI 1950
+REG 701 001 01	2D	CAD97 CADASTRE 1997
+REG 702 037 01	3D	RGM04 RGM04 (Réseau Géodésique de Mayotte 2004)
+REG 738 037 01  3D  RGM23 RGM23 (Référence Géodésique de Mayotte 2023)
 
 *--------------------------------------------------------------------------------------------------------
 *---------definition des referentiels altimetriques utilises---------------------------------------------
 *---------REA num short Nom------------------------------------------------------------------------------------
 
 REA 038 MAYO53 SHOM 1953
+* Nouveau système altimétrique 2023
+REA 057 IGN2023 IGN 2023 MAYOTTE
 
 *--------------------------------------------------------------------------------------------------------
 *---------definition des parametres de transformation standard utilises----------------------------------
-*---------TSG num reg1 reg2 prec Tx  Ty  Tz  Ech  Rx  Ry  Rz---------------------------------------------
-* nouvelles valeurs calcul TG juillet 2004
-* et numeros des TSG defini en BDG le 16/09/2004
-* modification TG le 03/06/2008 :
-* rétablissement des signes et sens de la transformation inversé  pour mise en conformité avec RT/G 53
+*---------transformation standard-------------------------------------------------------
+*TSG num  reg1 reg2 prec Tx(m)    Ty(m)    Tz(m)     Sc(1e-6)  Rx(s)     Ry(s)    Rz(s)      dTx(m/y) dTy(m/y) dTz(m/y) dSc(1e-6/y) dRx(s/y)  dRy(s/y)  dRz(s/y)  Epoch 
 TSG 10789 318 702 3  -599.928   -275.552   -195.665  49.2814  -0.0835  -0.4715    0.0602 0 0 0 0 0 0 0 0 0
 TSG 10788 701 702 3  -381.788    -57.501   -256.673   0.0000   0.0000   0.0000    0.0000 0 0 0 0 0 0 0 0 0
+* Transformation RGM04 <=> RGM23 : valeurs provisoires : calcul TG du 12 avril 2024 sur 13 points (utilisée par le SIA)
+*TSG 10799 702 738 2   43.944    -13.1890   -2.0920   -3.409764    0.217776   0.329601   1.275593 0 0 0 0 0 0 0 0 0      
+* transformation adoptée par le SGM: grille de paramètres (voir ci-desous)
+
+*---------definition grille de transfo/referentiels geodesiques-------------------------
+*---------GR3D "nomfichier" reg1 reg2---------------------------------------------------
+
+* Grille calculée par X. Collilieux (ENSG)
+GR3D RGM04versRGM23.tac 702 738
+
+*---------translations initiales--------------------------------------------------------
+*---------TSG0 reg1 reg2 TX0 TY0 TZ0----------------------------------------------------
+* paramètres calculés avec Cooriste le 12/04/2024
+
+TSG0  702 738 -0.5377     0.3946     0.3608
 
 *--------------------------------------------------------------------------------------------------------
 *---------definition des projections cartographiques utilisees-------------------------------------------
@@ -47,19 +61,22 @@ PRC 0338 0 500000.    10000000.     01 10 45.   0.     0.9996      0     0      
 *--------------------------------------------------------------------------------------------------------
 *---------associations referentiels geodesiques/projections cartographiques et zones d'application-------
 *---------PROJ reg prc unite lonMin latMin lonMax latMax-------------------------------------------------
-* Nouvelles limites en 2021 : celles du repère de référence RGM04
+
 PROJ 701 338 02 44.94  -13.06 45.41 -12.49 CAD97UTM38S  CAD97 - UTM Sud 38
 PROJ 318 338 02 44.94  -13.06 45.41 -12.49 MAYO50UTM38S MAYO50 - UTM Sud 38
 
 * Nouvelles limites pour le SBI en 2012
 * Attention : les limites sortent des bornes de la grille ggm04v1.tac
 PROJ 702 338 02 44.533  -13.076 45.401 -12.321 RGM04UTM38S  RGM04 - UTM Sud 38
+* Projection pour RGM23
+PROJ 738 338 02 44.533  -13.076 45.401 -12.321 RGM23UTM38S  RGM23 - UTM Sud 38
 
 *--------------------------------------------------------------------------------------------------------
 *---------associations grille geoide/referentiel geodesique/referentiel altimetrique---------------------
 *---------GR1D "nomfichier" reg [rea]...[rea]------------------------------------------------------------
-* Nouvelle grille le 22 juin 2004
 GR1D ggm04v1.tac 702 038
+* GRille associée à IGN 2023 Mayotte et RGM23 - calcul final (quatrième itération - calcul ConvAltex n°6)
+GR1D ggm23v2.tac 738 057
 
 *---------definition des zones d'application des referentiels geodesiques---------------
 *---------ZNE reg unite lonMin latMin lonMax latMax-------------------------------------
@@ -69,23 +86,28 @@ GR1D ggm04v1.tac 702 038
 ZNE 702 02 44.94 -13.06 45.41 -12.49
 ZNE 701 02 44.94 -13.06 45.41 -12.49
 ZNE 318 02 44.94 -13.06 45.41 -12.49
+ZNE 738 02 44.94 -13.06 45.41 -12.49
+
 
 *--------------------------------------------------------------------------------------------------------
 *---------associations referentiels geodesiques/type de coordonnées possibles----------------------------
 *---------TYPCOOR reg [01:Cartesiennes] [02:Geographiques] [03:Planes] ------------------------------
 
-TYPCOOR 702 01 02 03
+
 TYPCOOR 701 02 03
 TYPCOOR 318 02 03
+TYPCOOR 702 01 02 03
+TYPCOOR 738 01 02 03
 
 *--------------------------------------------------------------------------------------------------------
 *---------associations referentiels geodesiques/unites utilisables---------------------------------------
 *-----------------------------------remarque : si aucune info prend toutes les unités possibles----------
 *---------UNIT reg [unite]...[unite]---------------------------------------------------------------------
 
-UNIT 702
-UNIT 701
 UNIT 318
+UNIT 701
+UNIT 702
+UNIT 738
 
 
 *---------01 : radians

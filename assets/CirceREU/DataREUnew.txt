@@ -16,6 +16,7 @@ LGO 01 01   0.          Greenwich
 *---------definition des referentiels geodesiques utilises-----------------------------------------------
 *---------REG num elg lgo dimension short nom------------------------------------------------------------------
 
+REG I20 037 01 4D ITRF2020  ITRF2020
 REG I14 037 01 4D ITRF2014  ITRF2014
 REG 317 001 01 2D REUN47    Piton des Neiges
 REG 700 037 01 3D RGR92     RGR92
@@ -29,6 +30,7 @@ REA 033 REUN89 IGN89 (via RAR07)
 *--------------------------------------------------------------------------------------------------------
 *---------definition des parametres de transformation standard utilises----------------------------------
 *TSG num  reg1 reg2 prec Tx(m)    Ty(m)    Tz(m)     Sc(1e-6)  Rx(s)     Ry(s)    Rz(s)      dTx(m/y) dTy(m/y) dTz(m/y) dSc(1e-6/y) dRx(s/y)  dRy(s/y)  dRz(s/y)  Epoch 
+TSG I20I14 I20 I14  1    -0.0014  -0.0009   0.0014  -0.00042   0         0         0         0        -0.0001   0.0002   0           0         0         0        2015.0
 TSG I14700 I14 700 1   -0.0257  0.0496 -0.0336  0.00245  0.002057  0.013498  -0.015108 0 0 0 0  0.000121 0.000794 -0.000884 2010
 * Précision de la transformation estimée à meilleure que 10 centimetres
 TSG 10355 700 317 2 -789.990  627.333  89.685  32.2083 -0.6072 -76.8019  10.5680 0 0 0 0 0 0 0 0 0
@@ -49,6 +51,7 @@ PRC 0508 3 160000.     50000.  01 10  55.32 -21.07 1.     0 0 1 5 Gauss-Laborde 
 PROJ 317 508 02 55.139 -21.501 55.941 -20.749 REUN47GAUSSL Gauss-Laborde Réunion
 PROJ 700 340 02 55.139 -21.501 55.941 -20.749 RGR92UTM40S  RGR92 - UTM Sud 40 
 PROJ I14 340 02 55.139 -21.501 55.941 -20.749 I14UTM40S    ITRF2014 - UTM Sud 40 
+PROJ I20 340 02 55.139 -21.501 55.941 -20.749 I20UTM40S    ITRF2020 - UTM Sud 40 
 
 *--------------------------------------------------------------------------------------------------------
 *---------associations grille geoide/referentiel geodesique/referentiel altimetrique---------------------
@@ -70,6 +73,7 @@ PMM  I14 SO  0        0        0        -0.121     -0.794     0.884      Somalia
 ZNE 317 02 55.139  -21.501  55.941  -20.749
 ZNE 700 02 55.139  -21.501  55.941  -20.749
 ZNE I14 02 55.139  -21.501  55.941  -20.749
+ZNE I20 02 55.139  -21.501  55.941  -20.749
 
 *--------------------------------------------------------------------------------------------------------
 *---------01 : radians

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CIRCE_OPTIONS>
 	<appTitle>Circé Saint-Pierre-et-Miquelon</appTitle>
-	<appCopyright>Copyright @ IGN 2023</appCopyright>
-	<appVersion>Version 5.4.3 - Décembre 2023</appVersion>
+	<appCopyright>Copyright @ IGN 2026</appCopyright>
+	<appVersion>Version 5.5.0 - Janvier 2026</appVersion>
 	<appDescription>La transformation entre ITRF2014 et RGSPM06 est effectuée par une transformation à 14 paramètres (translations, rotations et facteur d'échelle, avec leurs variations annuelles). Les changements d'époque dans ITRF2014 utilisent le modèle de plaques ITRF2014. La transformation standard est effectuée entre les systèmes SPM 1950 et RGSPM06 avec des paramètres standard (translation, rotation et facteur d'échelle) uniques pour tout le territoire. Pour la composante verticale est utilisée une grille de conversion réalisée à partir du géoïde canadien CGG 2013 et de points GPS nivelés.</appDescription>
-	<appHelp>CirceSPM542.chm</appHelp>
+	<appHelp>ServicePublic550.chm</appHelp>
 	<appStyle></appStyle>
 	<appUserManual>CirceV5ManuelUtilisateur.pdf</appUserManual>
 	<dataMode>2</dataMode>

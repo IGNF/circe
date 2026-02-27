@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CIRCE_OPTIONS>
 	<appTitle>Circé Guyane</appTitle>
-	<appCopyright>Copyright @ IGN 2023</appCopyright>
-	<appVersion>Version 5.4.3 - Décembre 2023</appVersion>
+	<appCopyright>Copyright @ IGN 2026</appCopyright>
+	<appVersion>Version 5.5.0 - Janvier 2026</appVersion>
 	<appDescription>La transformation entre le repère de référence géodésique ITRF2014 et le repère RGFG95 est effectuée par une transformation à 14 paramètres (translations, rotations et facteur d'échelle, avec leurs variations annuelles). Les changements d'époque dans ITRF2014 utilisent le modèle de plaques ITRF2014. Les autres transformations géodésiques sont effectuées entre le repère RGFG95 et le repère local CSG67 avec un jeu de 7 paramètres. Une grille modélisant la surface de conversion altimétrique entre le repère RGFG95 (pour la Guyane) et le système altimétrique local permet le passage entre hauteur ellipsoïdale et altitude.</appDescription>
-	<appHelp>CirceGUY542.chm</appHelp>
+	<appHelp>ServicePublic550.chm</appHelp>
 	<appStyle>Horizontal</appStyle>
 	<appUserManual>CirceV5ManuelUtilisateur.pdf</appUserManual>
 	<dataMode>2</dataMode>
