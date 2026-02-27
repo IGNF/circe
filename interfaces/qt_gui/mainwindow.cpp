@@ -158,7 +158,10 @@ void MainWindow::buttonProcess_clicked()
                 lineditTargetH.setText(circe::displayElement(p,'H').data());
                 lineditTargetE.setText(circe::displayElement(p,'E').data());
                 lineditTargetN.setText(circe::displayElement(p,'N').data());
-                lineditTargetV.setText(circe::displayElement(p,'V').data());
+                if (p.info.find(std::string(circe::OperationMessageText[circe::OM_UNKNOWN_VALUE_FOUND])) !=std::string::npos)
+                    lineditTargetV.setText("NaN");
+                else
+                    lineditTargetV.setText(circe::displayElement(p,'V').data());
                 lineditTargetC.setText(circe::displayElement(p,'C').data());
                 lineditTargetD.setText(circe::displayElement(p,'D').data());
                 if (CO.noPrintSppm)
@@ -1961,8 +1964,20 @@ void MainWindow::menuHelp_About_triggered()
 
 void MainWindow::menuHelp_Doc_triggered()
 {
+
     QString helpFile = CO.appHelp.data();
+
+    // --------------------------------------------------------------
+    // Correction for opening documentation (issue #6)
+    // --------------------------------------------------------------
+    #ifdef UNIX
+        QDir didi;
+        helpFile = didi.absolutePath() + QString("/") + helpFile;
+    #endif
+    // --------------------------------------------------------------
+
     struct stat buffer;
+
     if (stat (helpFile.toStdString().c_str(), &buffer) != 0)
     {
         displayMessage(std::string(helpFile.toStdString()+circe::ErrorMessageText[circe::EM_NOT_FOUND]).data());
@@ -2002,10 +2017,22 @@ void MainWindow::menuHelp_Doc_triggered()
 void MainWindow::menuHelp_User_triggered()
 {
     QString userManualFile = QCoreApplication::applicationDirPath()+"/"+CO.appUserManual.data();
+
     struct stat buffer;
     if (stat (userManualFile.toStdString().c_str(), &buffer) != 0)
     {
+
         userManualFile = circeDataDir+CO.appUserManual.data();
+
+        // --------------------------------------------------------------
+        // Correction for opening user manuel (issue #6)
+        // --------------------------------------------------------------
+        #ifdef UNIX
+            userManualFile = circeDataDir + QString("../doc/") + CO.appUserManual.data();
+        #endif
+        std::cout << userManualFile.toStdString() << std::endl;
+        // --------------------------------------------------------------
+
         if (stat (userManualFile.toStdString().c_str(), &buffer) != 0)
         {
             userManualFile = circeDataDir+"../"+CO.appUserManual.data();
