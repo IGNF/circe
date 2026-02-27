@@ -74,6 +74,9 @@ namespace circe
 /**\brief Code for Lambert Azimuthal Equal Area (LAEA) Projection Method*/
 #define LAEAID "PRCM015from2Dto2D"
 
+/**\brief Code for Lambert Azimuthal Equal Area (LAEA) Projection Method*/
+#define HATTID "HATTIDfrom2Dto2D"
+
 /**\brief Code for Oblique Stereographic Projection with mean curvature sphere Projection Method*/
 #define SMCSID "PRCM093from2Dto2D"
 
@@ -199,6 +202,20 @@ public:
     ProjectionSouthPolarStereographic();
 	ProjectionSouthPolarStereographic(const Conversion &B, double _a, double _e2); // copy constructor
     ProjectionSouthPolarStereographic(const ProjectionSouthPolarStereographic &B) ; // copy constructor
+    void reset();
+    void InitParam(std::string IPMid, std::string AMid, std::string AIMid);
+    void Apply(double l, double p, double *x, double *y, double *conv, double *scfact);
+    void ApplyInv(double x, double y, double *l, double *p, double *conv, double *scfact);
+};
+
+
+/**\brief This class manages operations between geographic and Hatt Projected coordinates.*/
+class ProjectionHatt : public Conversion
+{
+public:
+    ProjectionHatt();
+    ProjectionHatt(const Conversion &B, double _a, double _e2); // copy constructor
+    ProjectionHatt(const ProjectionHatt &B) ; // copy constructor
     void reset();
     void InitParam(std::string IPMid, std::string AMid, std::string AIMid);
     void Apply(double l, double p, double *x, double *y, double *conv, double *scfact);

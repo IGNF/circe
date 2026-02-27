@@ -539,6 +539,58 @@ void ProjectionSouthPolarStereographic::ApplyInv(double x, double y, double *l, 
 }
 
 
+/**
+* \brief Constructor.
+*/
+ProjectionHatt::ProjectionHatt()
+{
+
+}
+/**
+* \brief Copy constructor.
+*/
+ProjectionHatt::ProjectionHatt(const Conversion &B, double _a, double _e2) : Conversion(B, _a, _e2)
+{
+    InitParam(B.getInitParamMethodId(), "", "");
+}
+/**
+* \brief Copy constructor.
+*/
+ProjectionHatt::ProjectionHatt(const ProjectionHatt &B) : Conversion(B)
+{
+}
+/**
+* \brief Empties values of the members of an instance.
+*/
+void ProjectionHatt::reset()
+{
+    Conversion::reset();
+}
+
+/**
+* \brief Parameter initialization.
+*/
+void ProjectionHatt::InitParam(std::string IPMid, std::string AMid, std::string AIMid)
+{
+    setStatus("AUTHORITATIVE");
+    setReversibility("DIRECT");
+    setInitParamMethodId(IPMid);
+    setApplicationMethodId(AMid);
+    setApplicationInvMethodId(AIMid);
+}
+/**\brief Geographic to Projected coordinates.*/
+void ProjectionHatt::Apply(double l, double p, double *x, double *y, double *conv, double *scfact)
+{
+    GeoHatt(lambda0, phi0, x0, y0, a, e2, l, p, x, y);
+    *conv = *scfact = 0.;
+}
+/**\brief Projected to Geographic coordinates.*/
+void ProjectionHatt::ApplyInv(double x, double y, double *l, double *p, double *conv, double *scfact)
+{
+    HattGeo(lambda0, phi0, x0, y0, a, e2, l, p, x, y);
+    *conv = *scfact = 0.;
+}
+
 //EPSG 9836
 //Geographic/topocentric conversions 
 

@@ -671,6 +671,7 @@ Conversion* CatOperation::InitConversion(CRS* geodeticCRS)
         else if (projectionMethodId == GLSEID) myConversion = new ProjectionGLab(*conv, _a, _e2);
         else if (projectionMethodId == GLSCID) myConversion = new ProjectionGLab(*conv, _a, _e2);
         else if (projectionMethodId == LAEAID) myConversion = new ProjectionLAEA(*conv, _a, _e2);
+        else if (projectionMethodId == HATTID) myConversion = new ProjectionHatt(*conv, _a, _e2);
         else if (projectionMethodId==SMCSID || projectionMethodId==SPSSID
 			|| projectionMethodId == SPSTID) myConversion = new ProjectionSouthPolarStereographic(*conv, _a, _e2);
         else

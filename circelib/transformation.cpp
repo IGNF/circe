@@ -3521,7 +3521,7 @@ OPERATION_MESSAGE Transformation::ApplyGeodeticTransformation(double l1, double 
 		if (itTsel->getValuesNumber() == 3)
             Transform3(itTsel->getOperationApplication(), itTsel->getInitValues(),
                        itTsel->RateFactor, x1, y1, z1, x2, y2, z2);
-		else if (itTsel->getValuesNumber() == 7 || itTsel->getValuesNumber() == 14)
+        else if (itTsel->getValuesNumber() == 7 || itTsel->getValuesNumber() == 14)
 			Transform7(itTsel->getOperationApplication(), itTsel->getInitValues(), x1, y1, z1, x2, y2, z2);
 		*precision_code = itTsel->getPrecisionCodeInit();
 		if (followUpTransfos == 1)
@@ -3639,7 +3639,10 @@ OPERATION_MESSAGE Transformation::ApplyVerticalTransformation(double l, double p
 	else
 	{
         return_code = itTsel->Interpolate(MU_RADIAN, l, p, VV, code);
-		*w2 = w1 + drctn*VV[0];
+        if (VV[0] == itTsel->UnknownValue)
+            *w2 = itTsel->UnknownValue;
+        else
+            *w2 = w1 + drctn*VV[0];
 		if (followUpTransfos == 1)
             itTsel->FollowUp += asString(drctn*VV[0]) + "\n";
 	}
@@ -3671,7 +3674,7 @@ OPERATION_MESSAGE Transformation::ApplyVerticalTransformation2(pt4d *pt, double 
         drctn = -1;
 
     pt->info.assign(itTsel->getSourceFrameId());
-    pt->info2.assign(itTsel->getGridFile());
+    pt->info2.assign(getFilename(itTsel->getGridFile()));
     if (itTsel->getLayout() == L_CONSTANT)
     {
         if (itTsel->getValuesNumber() == 1)
@@ -3688,7 +3691,13 @@ OPERATION_MESSAGE Transformation::ApplyVerticalTransformation2(pt4d *pt, double 
     else
     {
         return_code = itTsel->Interpolate(MU_RADIAN, pt->l, pt->p, VV, code);
-        *w2 = w1 + drctn*VV[0];
+        if (VV[0] == itTsel->UnknownValue)
+        {
+            *w2 = itTsel->UnknownValue;
+            pt->info2.assign(pt->info2 + "-" + std::string(OperationMessageText[OM_UNKNOWN_VALUE_FOUND]));
+        }
+        else
+            *w2 = w1 + drctn*VV[0];
         if (followUpTransfos == 1)
             itTsel->FollowUp += asString(drctn*VV[0]) + "\n";
         if (calc_vert_defl)

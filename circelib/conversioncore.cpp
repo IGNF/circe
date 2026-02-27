@@ -834,3 +834,55 @@ double ShifTnTilT (double a1, double a2, double a3, double lambda0, double phi0,
 {
     return a1 + a2*RMer(a,e2,phi)*(phi-phi0) + a3*GrandeNormale(phi,a,e2)*(lambda-lambda0)*cos(phi);
 }
+
+/**\brief alg0079 Geographic to Hatt Projected coordinates.*/
+void GeoHatt(double lambda0, double phi0, double x0, double y0,
+             double a, double e2, double lambda, double phi, double *x, double *y)
+{
+    if (cos(phi) < 1e-10)
+    {
+        *x = 0.;
+        *y = 0.;
+        return;
+    }
+    double psi = atan( (1-e2)*tan(phi) + e2*GrandeNormale(phi0,a,e2)*sin(phi0)
+                      / GrandeNormale(phi,a,e2)/cos(phi) );
+    double az = atan2( sin(lambda-lambda0),
+                       cos(phi0)*tan(psi)-sin(phi0)*cos(lambda-lambda0) );
+    double s;
+    if (sin(az) == 0)
+    {
+        s = fabs(asin(cos(phi0)*sin(psi)-sin(phi0)*cos(psi)));
+        if (cos(az) < 0) s = -s;
+    }
+    else
+    {
+        s = asin(sin(lambda-lambda0)*cos(psi)/sin(az));
+    }
+    double e = sqrt(e2);
+    double G = e*sin(phi0)/sqrt(1-e2);
+    double H = e*cos(phi0)*cos(az)/sqrt(1-e2);
+    double c = GrandeNormale(phi0,a,e2) * s * ( 1
+               - pow(s,2)*pow(H,2)*(1-pow(H,2))/6.
+               + pow(s,3)*G*H*(1-2*pow(H,2))/8.
+               + pow(s,4)*( pow(H,2)*(4-7*pow(H,2))-3*pow(G,2)*(1-7*pow(H,2)) )/120.
+               - pow(s,5)/48. );
+    *x = c*sin(az)+x0;
+    *y = c*cos(az)+y0;
+}
+
+/**\brief alg0080 Hatt Projected to Geographic coordinates.*/
+void HattGeo(double lambda0, double phi0, double x0, double y0,
+             double a, double e2, double *lambda, double *phi, double x, double y)
+{
+    double C = sqrt(pow(x-x0,2)+pow(y-y0,2));
+    double az = atan2(x-x0, y-y0);
+    double A = -e2*pow(cos(phi0),2)*pow(cos(az),2) / (1-e2);
+    double B = 3*e2*(1-A)*sin(phi0)*cos(phi0)*cos(az) / (1-e2);
+    double D = C / GrandeNormale(phi0,a,e2);
+    double E = D - A*(1+A)*pow(D,3)/6. - B*(1+3*A)*pow(D,4)/24.;
+    double F = 1 - A*pow(E,2)/2. - B*pow(E,3)/6.;
+    double psi = asin(sin(phi0)*cos(E)+cos(phi0)*sin(E)*cos(az));
+    *lambda = lambda0 + asin(sin(az)*sin(E)/cos(psi));
+    *phi = atan( (1 - e2*F*sin(phi0)/sin(psi)) * tan(psi)/(1-e2) );
+}

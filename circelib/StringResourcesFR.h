@@ -140,7 +140,8 @@ static const std::string OperationMessageText[OM_COUNT] =
     "L'époque cible n'est pas valide ou le repère cible n'est pas 4D.",
     "Points traités avec succès ",
     "L'époque source a été modifiée à sa valeur prédéfinie.",
-    "L'époque cible a été modifiée à sa valeur prédéfinie."
+    "L'époque cible a été modifiée à sa valeur prédéfinie.",
+    "Valeur inconnue"
 };
 
 static const std::string GridFormatInfoText[GF_COUNT] =

@@ -99,5 +99,7 @@ void GeoLAEA(double a, double e2, double lambda0, double phi0, double qp, double
 void LAEAgeo(double a, double e2, double lambda0, double phi0, double qp, double Rq, double beta1, double D, double x0, double y0, double *lambda, double *phi, double x, double y);
 void testGeoSterPolSud();
 double ShifTnTilT(double a1, double a2, double a3, double lambda0, double phi0, double a, double e2, double lambda, double phi);
+void GeoHatt(double lambda0, double phi0, double x0, double y0, double a, double e2, double lambda, double phi, double *x, double *y);
+void HattGeo(double lambda0, double phi0, double x0, double y0, double a, double e2, double *lambda, double *phi, double x, double y);
 
 #endif // !defined CONVERSIONCORE_H

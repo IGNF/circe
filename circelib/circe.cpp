@@ -132,7 +132,8 @@ void endProcess(std::ofstream* fo, const circeOptions& circopt, time_t timer, un
 void writeVerticalInfo(GeodeticSet* GS, pt4d *p)
 {
     if (GS->getVerticalReferenceFrameName(p->info) != "" || getFilename(p->info2) != "")
-        p->info = GS->getVerticalReferenceFrameName(p->info)+" via "+getFilename(p->info2);
+//        p->info = GS->getVerticalReferenceFrameName(p->info)+" via "+getFilename(p->info2);
+        p->info = GS->getVerticalReferenceFrameName(p->info)+" via "+p->info2;
 }
 
 /*

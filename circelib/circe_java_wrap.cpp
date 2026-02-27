@@ -4385,6 +4385,18 @@ SWIGEXPORT jstring JNICALL Java_ign_circe_circeJNI_LAEAID_1get(JNIEnv *jenv, jcl
 }
 
 
+SWIGEXPORT jstring JNICALL Java_ign_circe_circeJNI_HATTID_1get(JNIEnv *jenv, jclass jcls) {
+  jstring jresult = 0 ;
+  char *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (char *)("HATTIDfrom2Dto2D");
+  if (result) jresult = jenv->NewStringUTF((const char *)result);
+  return jresult;
+}
+
+
 SWIGEXPORT jstring JNICALL Java_ign_circe_circeJNI_SMCSID_1get(JNIEnv *jenv, jclass jcls) {
   jstring jresult = 0 ;
   char *result = 0 ;
@@ -5718,6 +5730,165 @@ SWIGEXPORT void JNICALL Java_ign_circe_circeJNI_delete_1ProjectionSouthPolarSter
   (void)jenv;
   (void)jcls;
   arg1 = *(circe::ProjectionSouthPolarStereographic **)&jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT jlong JNICALL Java_ign_circe_circeJNI_new_1ProjectionHatt_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  circe::ProjectionHatt *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (circe::ProjectionHatt *)new circe::ProjectionHatt();
+  *(circe::ProjectionHatt **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT jlong JNICALL Java_ign_circe_circeJNI_new_1ProjectionHatt_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jdouble jarg2, jdouble jarg3) {
+  jlong jresult = 0 ;
+  circe::Conversion *arg1 = 0 ;
+  double arg2 ;
+  double arg3 ;
+  circe::ProjectionHatt *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  (void)jarg1_;
+  arg1 = *(circe::Conversion **)&jarg1;
+  if (!arg1) {
+    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "circe::Conversion const & reference is null");
+    return 0;
+  } 
+  arg2 = (double)jarg2; 
+  arg3 = (double)jarg3; 
+  result = (circe::ProjectionHatt *)new circe::ProjectionHatt((circe::Conversion const &)*arg1,arg2,arg3);
+  *(circe::ProjectionHatt **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT jlong JNICALL Java_ign_circe_circeJNI_new_1ProjectionHatt_1_1SWIG_12(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+  jlong jresult = 0 ;
+  circe::ProjectionHatt *arg1 = 0 ;
+  circe::ProjectionHatt *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  (void)jarg1_;
+  arg1 = *(circe::ProjectionHatt **)&jarg1;
+  if (!arg1) {
+    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "circe::ProjectionHatt const & reference is null");
+    return 0;
+  } 
+  result = (circe::ProjectionHatt *)new circe::ProjectionHatt((circe::ProjectionHatt const &)*arg1);
+  *(circe::ProjectionHatt **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_ign_circe_circeJNI_ProjectionHatt_1reset(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+  circe::ProjectionHatt *arg1 = (circe::ProjectionHatt *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  (void)jarg1_;
+  arg1 = *(circe::ProjectionHatt **)&jarg1; 
+  (arg1)->reset();
+}
+
+
+SWIGEXPORT void JNICALL Java_ign_circe_circeJNI_ProjectionHatt_1InitParam(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jstring jarg2, jstring jarg3, jstring jarg4) {
+  circe::ProjectionHatt *arg1 = (circe::ProjectionHatt *) 0 ;
+  std::string arg2 ;
+  std::string arg3 ;
+  std::string arg4 ;
+  
+  (void)jenv;
+  (void)jcls;
+  (void)jarg1_;
+  arg1 = *(circe::ProjectionHatt **)&jarg1; 
+  if(!jarg2) {
+    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "null string");
+    return ;
+  } 
+  const char *arg2_pstr = (const char *)jenv->GetStringUTFChars(jarg2, 0); 
+  if (!arg2_pstr) return ;
+  (&arg2)->assign(arg2_pstr);
+  jenv->ReleaseStringUTFChars(jarg2, arg2_pstr); 
+  if(!jarg3) {
+    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "null string");
+    return ;
+  } 
+  const char *arg3_pstr = (const char *)jenv->GetStringUTFChars(jarg3, 0); 
+  if (!arg3_pstr) return ;
+  (&arg3)->assign(arg3_pstr);
+  jenv->ReleaseStringUTFChars(jarg3, arg3_pstr); 
+  if(!jarg4) {
+    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "null string");
+    return ;
+  } 
+  const char *arg4_pstr = (const char *)jenv->GetStringUTFChars(jarg4, 0); 
+  if (!arg4_pstr) return ;
+  (&arg4)->assign(arg4_pstr);
+  jenv->ReleaseStringUTFChars(jarg4, arg4_pstr); 
+  (arg1)->InitParam(arg2,arg3,arg4);
+}
+
+
+SWIGEXPORT void JNICALL Java_ign_circe_circeJNI_ProjectionHatt_1Apply(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jdouble jarg2, jdouble jarg3, jlong jarg4, jlong jarg5, jlong jarg6, jlong jarg7) {
+  circe::ProjectionHatt *arg1 = (circe::ProjectionHatt *) 0 ;
+  double arg2 ;
+  double arg3 ;
+  double *arg4 = (double *) 0 ;
+  double *arg5 = (double *) 0 ;
+  double *arg6 = (double *) 0 ;
+  double *arg7 = (double *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  (void)jarg1_;
+  arg1 = *(circe::ProjectionHatt **)&jarg1; 
+  arg2 = (double)jarg2; 
+  arg3 = (double)jarg3; 
+  arg4 = *(double **)&jarg4; 
+  arg5 = *(double **)&jarg5; 
+  arg6 = *(double **)&jarg6; 
+  arg7 = *(double **)&jarg7; 
+  (arg1)->Apply(arg2,arg3,arg4,arg5,arg6,arg7);
+}
+
+
+SWIGEXPORT void JNICALL Java_ign_circe_circeJNI_ProjectionHatt_1ApplyInv(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jdouble jarg2, jdouble jarg3, jlong jarg4, jlong jarg5, jlong jarg6, jlong jarg7) {
+  circe::ProjectionHatt *arg1 = (circe::ProjectionHatt *) 0 ;
+  double arg2 ;
+  double arg3 ;
+  double *arg4 = (double *) 0 ;
+  double *arg5 = (double *) 0 ;
+  double *arg6 = (double *) 0 ;
+  double *arg7 = (double *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  (void)jarg1_;
+  arg1 = *(circe::ProjectionHatt **)&jarg1; 
+  arg2 = (double)jarg2; 
+  arg3 = (double)jarg3; 
+  arg4 = *(double **)&jarg4; 
+  arg5 = *(double **)&jarg5; 
+  arg6 = *(double **)&jarg6; 
+  arg7 = *(double **)&jarg7; 
+  (arg1)->ApplyInv(arg2,arg3,arg4,arg5,arg6,arg7);
+}
+
+
+SWIGEXPORT void JNICALL Java_ign_circe_circeJNI_delete_1ProjectionHatt(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  circe::ProjectionHatt *arg1 = (circe::ProjectionHatt *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(circe::ProjectionHatt **)&jarg1; 
   delete arg1;
 }
 
@@ -13420,6 +13591,14 @@ SWIGEXPORT jlong JNICALL Java_ign_circe_circeJNI_ProjectionSouthPolarStereograph
     (void)jenv;
     (void)jcls;
     *(circe::Conversion **)&baseptr = *(circe::ProjectionSouthPolarStereographic **)&jarg1;
+    return baseptr;
+}
+
+SWIGEXPORT jlong JNICALL Java_ign_circe_circeJNI_ProjectionHatt_1SWIGUpcast(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+    jlong baseptr = 0;
+    (void)jenv;
+    (void)jcls;
+    *(circe::Conversion **)&baseptr = *(circe::ProjectionHatt **)&jarg1;
     return baseptr;
 }
 

@@ -1856,6 +1856,7 @@ void WriteXMlfromCirceLegacyMetadata(const std::string outfile, const LEGACY_MET
         else if (itPRC->type == 5 && itPRC->mode == 2) {prcm = GLSEID;} //GAUSS-LABORDE - SPHERE EQUATORIALE
         else if (itPRC->type == 5 && itPRC->mode == 3) {prcm = GLSCID;} //GAUSS-LABORDE - SPHERE DE COURBURE MOYENNE
         else if (itPRC->type == 6) {prcm = LAEAID;} //LAMBERT AZIMUTHAL EQUAL AREA
+        else if (itPRC->type == 99 && itPRC->mode == 4) {prcm = HATTID;} //HATT
         // SPSSID is the only stereographic to be implemented
         else if (itPRC->type == 9 && itPRC->mode == 1) {prcm = SMCSID;} //STEREOGRAPHIQUE - SPHERE DE COURBURE MOYENNE
         else if (itPRC->type == 9 && itPRC->mode == 5) {prcm = SPSTID;} //STEREOGRAPHIQUE - STEREOGRAPHIQUE POLAIRE - SUD - TANGENTE

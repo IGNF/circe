@@ -652,7 +652,10 @@ void writeBasicLine(std::ostream *fo, const circeOptions &circopt,
             *fo << std::setprecision(p.frmt.n_m/*3*/);
             if (!js) *fo << std::setw(10);
             *fo << std::right;
-            *fo << p.w;
+            if (p.info.find(std::string(OperationMessageText[OM_UNKNOWN_VALUE_FOUND])) !=std::string::npos)
+                *fo << "NaN";
+            else
+                *fo << p.w;
             break;
         case 'C':
             *fo << std::setprecision(6);
@@ -701,11 +704,12 @@ void writeBasicLine(std::ostream *fo, const circeOptions &circopt,
         if (js) *fo << ",\n\"geodetic_precision\":\"";
         if (!js) *fo << std::setw(12);
         *fo << precisionCode2Text(p.Gprec);
+        if (js) *fo << "\"";
     }
     if (p.transfoIndex&T_VERTICAL_REQUIRED)
     {
         //if (p.Vprec != 0)
-        if (js) *fo << "\",\n\"vertical_precision\":\"";
+        if (js) *fo << ",\n\"vertical_precision\":\"";
         if (!js) *fo << std::setw(12);
         *fo << precisionCode2Text(p.Vprec);
         if (js) *fo << "\"";
